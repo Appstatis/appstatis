@@ -1,22 +1,18 @@
 import { memo } from "react";
+import { Feature as TFeature } from "@/types/Feature";
 
-const FeatureComponent = ({
-  image,
-  title,
-  description,
-}: {
-  image: string;
-  title: string;
-  description: string;
-}) => {
+/**
+ * FeatureComponent is a functional component that represents
+ * a single feature of the features section on the index page.
+ */
+const FeatureComponent = ({ Icon, title, description }: TFeature) => {
   return (
-    <div className="grid space-x-28 place-items-center grid-cols-2">
-      <div>
-        <h2 className="font-bold text-2xl">{title}</h2>
-        <p>{description}</p>
-      </div>
-      {/* hack: not using Image because it throws an error */}
-      <img src={image} alt={title} className="w-full" />
+    <div className="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:shadow-white/10">
+      <Icon color="white" />
+
+      <h2 className="mt-4 text-xl font-bold text-white">{title}</h2>
+
+      <p className="mt-1 text-sm text-gray-300">{description}</p>
     </div>
   );
 };

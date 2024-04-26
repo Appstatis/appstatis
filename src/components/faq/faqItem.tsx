@@ -7,6 +7,10 @@ import {
 import type { FAQItem as TFAQItem } from "@/types/FAQItem";
 import { memo } from "react";
 
+/**
+ * FAQItemComponent is a functional component that represents a single FAQ item.
+ * It should be used inside the FAQItems component as a child.
+ */
 const FAQItemComponent = ({ question, answer }: TFAQItem) => {
   return (
     <Accordion type="single" collapsible>

@@ -39,8 +39,23 @@ export const ContactForm = () => {
     },
   });
 
+  const handleFetchFormAPI = async (values: z.infer<typeof formSchema>) => {
+    if (!process.env.NEXT_PUBLIC_FORMSPARK_ACTION_URL) return;
+
+    const res = await fetch(process.env.NEXT_PUBLIC_FORMSPARK_ACTION_URL, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+      body: JSON.stringify(values),
+    });
+
+    if (!res.ok) throw new Error("Failed to submit form");
+  };
+
   function onSubmit(values: z.infer<typeof formSchema>) {
-    console.log(values);
+    handleFetchFormAPI(values);
   }
 
   return (

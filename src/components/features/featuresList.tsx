@@ -1,4 +1,4 @@
-import { Button } from "../ui/button";
+import { Header } from "../header";
 import { Feature } from "./feature";
 import { Feature as TFeature } from "@/types/Feature";
 
@@ -15,20 +15,12 @@ export const FeaturesList = ({
   }
 
   return (
-    <section>
+    <>
       <div className="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
-        <div className="mx-auto max-w-2xl text-center">
-          <h2 className="text-3xl font-bold sm:text-4xl">
-            What we promise you
-          </h2>
-
-          <p className="mt-4 text-gray-300">
-            Expert web development services that are available around the clock,
-            ensuring personalized and technology-driven solutions to meet your
-            project needs, allowing you to focus on your core business while we
-            handle your web development requirements.
-          </p>
-        </div>
+        <Header
+          title="What we promise you"
+          description="Expert web development services that are available around the clock, ensuring personalized and technology-driven solutions to meet your project needs, allowing you to focus on your core business while we handle your web development requirements."
+        />
 
         <div className="mt-8 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
           {featuresList.map((feature, index) => (
@@ -40,11 +32,7 @@ export const FeaturesList = ({
             />
           ))}
         </div>
-
-        <div className="mt-12 text-center">
-          <Button>Get Started Today</Button>
-        </div>
       </div>
-    </section>
+    </>
   );
 };

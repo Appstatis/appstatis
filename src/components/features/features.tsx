@@ -1,19 +1,27 @@
 "use client";
 
-import { FeaturesList } from "./featuresList";
-import { featuresList } from "../../data/featuresList";
+import React, { useEffect, useContext } from "react";
 import { useInView } from "react-intersection-observer";
 import anime from "animejs";
-import { useEffect } from "react";
+import { FeaturesList } from "./featuresList";
+import { featuresList } from "../../data/featuresList";
+import ScrollContext from "@/context/scrollContext";
 
 /**
  * Features is a functional component that abstracts the logic of the FeaturesList component.
  */
 export const Features = () => {
-  const { ref, inView } = useInView({
+  const contextRef = useContext(ScrollContext);
+
+  const { ref: inViewRef, inView } = useInView({
     triggerOnce: true,
     threshold: 0.5,
   });
+
+  const setRefs = (node: HTMLElement | null) => {
+    inViewRef(node);
+    if (node) contextRef.current = node;
+  };
 
   useEffect(() => {
     if (inView) {
@@ -24,10 +32,10 @@ export const Features = () => {
         duration: 3000,
       });
     }
-  }, [inView, ref]);
+  }, [inView]);
 
   return (
-    <section ref={ref} className="opacity-0 features">
+    <section ref={setRefs} id="features" className="opacity-0 features">
       <FeaturesList featuresList={featuresList} />
     </section>
   );

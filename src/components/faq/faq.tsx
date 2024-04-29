@@ -1,15 +1,17 @@
 import { FAQItems } from "../faq/faqItems";
 import { FAQ as FAQData } from "@/data/faq";
+import { Header } from "../header";
 
 /**
- * FAQ is a functional component that represents the FAQ section of the landing page.
+ * This component abstracts the complexity of FAQItems and FAQItem.
+ * It represents a FAQ section.
+ *
+ * @returns A react element that represents a section with FAQ items
  */
 export const FAQ = () => {
   return (
     <section className="grid justify-center">
-      <h2 className="text-center mb-3 font-bold text-3xl">
-        Answers to some questions that might pop up in your mind
-      </h2>
+      <Header title="Answers to some questions that might pop up in your mind" />
       <FAQItems faq={FAQData} />
     </section>
   );

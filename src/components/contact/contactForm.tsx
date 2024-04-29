@@ -28,6 +28,13 @@ const formSchema = z.object({
   }),
 });
 
+/**
+ * ContactForm component that supports form validation provided by react-hook-form and zod.
+ * This component is integrated with Formspark API to handle form submission.
+ * When submitting the form, user should provide their name, email, and message. Company is optional.
+ *
+ * @returns A contact form component
+ */
 export const ContactForm = () => {
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
@@ -39,6 +46,11 @@ export const ContactForm = () => {
     },
   });
 
+  /**
+   * Fetches the Formspark Action URL from the environment variables and sends a POST request to the URL with the form values.
+   *
+   * @param values
+   */
   const handleFetchFormAPI = async (values: z.infer<typeof formSchema>) => {
     if (!process.env.NEXT_PUBLIC_FORMSPARK_ACTION_URL) return;
 

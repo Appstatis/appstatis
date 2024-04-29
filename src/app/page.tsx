@@ -3,6 +3,7 @@ import { Features } from "@/components/features/features";
 import { FAQ } from "@/components/faq/faq";
 import { Pricing } from "@/components/pricing/pricing";
 import { AdditionalQuestions } from "@/components/additionalQuestions";
+import { Contact } from "@/components/contact/contact";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <Pricing />
       <FAQ />
       <AdditionalQuestions />
+      <Contact />
     </>
   );
 }

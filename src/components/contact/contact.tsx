@@ -1,4 +1,5 @@
 import { ContactForm } from "./contactForm";
+import { Header } from "../header";
 
 /**
  * Contact section component that wraps the <ContactForm /> component and adds additional styling and text.
@@ -7,11 +8,11 @@ import { ContactForm } from "./contactForm";
  */
 export const Contact = () => {
   return (
-    <section className="flex flex-col items-center w-full">
-      <p className="font-bold text-2xl">
-        Don&apos;t have much time for calls or just hate them?
-      </p>
-      <h2 className="font-bold text-xl">Text us instead!</h2>
+    <section className="flex flex-col min-h-[75vh] mt-52 items-center w-full">
+      <Header
+        title="Text us instead!"
+        description="In case you don't have much time for calls or just hate them"
+      />
       <ContactForm />
     </section>
   );

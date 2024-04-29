@@ -8,7 +8,9 @@ import { featuresList } from "../../data/featuresList";
 import ScrollContext from "@/context/scrollContext";
 
 /**
- * Features is a functional component that abstracts the logic of the FeaturesList component.
+ * This component abstracts the complexity of FeaturesList and FeatureItem.
+ *
+ * @returns A react element that represents a section with features
  */
 export const Features = () => {
   const contextRef = useContext(ScrollContext);
@@ -35,7 +37,11 @@ export const Features = () => {
   }, [inView]);
 
   return (
-    <section ref={setRefs} id="features" className="opacity-0 features">
+    <section
+      ref={setRefs}
+      id="features"
+      className="min-h-[75vh] opacity-0 features"
+    >
       <FeaturesList featuresList={featuresList} />
     </section>
   );

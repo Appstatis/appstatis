@@ -1,3 +1,6 @@
+"use client";
+
+import { Header } from "../header";
 import { pricingItems } from "@/data/pricingItems";
 import { PricingList } from "./pricingList";
 import { useInView } from "react-intersection-observer";
@@ -28,12 +31,14 @@ export const Pricing = () => {
   }, [inView, ref]);
 
   return (
-    <section
-      ref={ref}
-      style={{ opacity: 0 }}
-      className="pricing mt-28 h-[50vh]"
-    >
-      <PricingList pricingItems={pricingItems} />
+    <section className="min-h-[75vh] space-y-10">
+      <Header
+        title="Pricing"
+        description="Our pricing is designed to be simple and transparent. We offer a variety of pricing options to suit your needs."
+      />
+      <div ref={ref} style={{ opacity: 0 }} className="pricing">
+        <PricingList pricingItems={pricingItems} />
+      </div>
     </section>
   );
 };

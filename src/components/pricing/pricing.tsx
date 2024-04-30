@@ -1,8 +1,8 @@
 "use client";
 
-import { Header } from "../header";
+import { Header } from "../Header";
 import { pricingItems } from "@/data/pricingItems";
-import { PricingList } from "./pricingList";
+import { PricingList } from "@/components/pricing/PricingList";
 import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
 import anime from "animejs";
@@ -25,7 +25,7 @@ export const Pricing = () => {
         targets: ".pricing",
         translateY: [100, 0],
         opacity: [0, 1],
-        duration: 800,
+        duration: 1500,
       });
     }
   }, [inView, ref]);

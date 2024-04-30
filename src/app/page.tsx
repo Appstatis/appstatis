@@ -1,9 +1,9 @@
-import { Hero } from "@/components/hero";
-import { Services } from "@/components/services";
-import { Features } from "@/components/features/features";
-import { FAQ } from "@/components/faq/faq";
-import { Pricing } from "@/components/pricing/pricing";
-import { AdditionalQuestions } from "@/components/additionalQuestions";
+import { Hero } from "@/components/hero/Hero";
+import { Services } from "@/components/services/Services";
+import { Features } from "@/components/features/Features";
+import { FAQ } from "@/components/faq/FAQ";
+import { Pricing } from "@/components/pricing/Pricing";
+import { AdditionalQuestions } from "@/components/AdditionalQuestions";
 import { Contact } from "@/components/contact/contact";
 
 export default function Home() {

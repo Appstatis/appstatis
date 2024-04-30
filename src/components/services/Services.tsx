@@ -1,5 +1,5 @@
-import { Header } from "./header";
-import { ServicesList } from "../services/servicesList";
+import { Header } from "@/components/Header";
+import { ServicesList } from "@/components/services/ServicesList";
 import { services } from "@/data/services";
 
 /**

@@ -1,5 +1,5 @@
 import type { PricingItem as TPricingItem } from "@/types/PricingItem";
-import { PricingItem } from "./pricingItem";
+import { PricingItem } from "@/components/pricing/PricingItem";
 
 /**
  * This component renders a list of PricingItem components

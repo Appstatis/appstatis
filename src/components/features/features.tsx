@@ -3,7 +3,7 @@
 import React, { useEffect, useContext } from "react";
 import { useInView } from "react-intersection-observer";
 import anime from "animejs";
-import { FeaturesList } from "./featuresList";
+import { FeaturesList } from "@/components/features/FeaturesList";
 import { featuresList } from "../../data/featuresList";
 import ScrollContext from "@/context/scrollContext";
 

@@ -1,5 +1,5 @@
 import type { Service as TService } from "@/types/Service";
-import { Service } from "./service";
+import { Service } from "@/components/services/Service";
 
 /**
  * An implementation of a list of services.

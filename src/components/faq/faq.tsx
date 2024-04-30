@@ -1,6 +1,6 @@
-import { FAQItems } from "../faq/faqItems";
+import { FAQItems } from "@/components/faq/faqItems";
 import { FAQ as FAQData } from "@/data/faq";
-import { Header } from "../header";
+import { Header } from "@/components/Header";
 
 /**
  * This component abstracts the complexity of FAQItems and FAQItem.

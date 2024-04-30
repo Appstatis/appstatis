@@ -41,8 +41,14 @@ const PricingItemComponent = ({ title, pricingType }: TPricingItem) => {
         <h3 className="font-bold text-2xl">{title}</h3>
         <div>
           <span className="text-3xl">
-            {price}
-            {pricingType === "periodic" && <span>/mo</span>}
+            {pricingType === "periodic" ? (
+              <span>{price}/mo</span>
+            ) : (
+              <>
+                <span className="line-through text-gray-700">{price}</span>
+                <span className="ml-2">$0</span>
+              </>
+            )}
           </span>
         </div>
         <p>{description}</p>

@@ -1,5 +1,5 @@
-import { ContactForm } from "./contactForm";
-import { Header } from "../header";
+import { Header } from "@/components/Header";
+import { ContactForm } from "@/components/contact/ContactForm";
 
 /**
  * Contact section component that wraps the <ContactForm /> component and adds additional styling and text.

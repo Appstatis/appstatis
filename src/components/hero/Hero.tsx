@@ -9,7 +9,7 @@ import { TextGenerateEffect } from "../ui/text-generate-effect";
 export const Hero = () => {
   return (
     <>
-      <section className="h-[75vh] grid justify-center place-content-center">
+      <section className="h-[80vh] grid justify-center place-content-center">
         <article className="space-y-3 max-w-2xl">
           <header className="space-y-2 font-bold text-7xl">
             <TextGenerateEffect words="Unleash ideas Embrace innovation" />

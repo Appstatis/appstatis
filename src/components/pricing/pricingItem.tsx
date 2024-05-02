@@ -1,6 +1,7 @@
 import { memo } from "react";
-import { Button } from "../ui/button";
+import { buttonVariants } from "../ui/button";
 import type { PricingItem as TPricingItem } from "@/types/PricingItem";
+import Link from "next/link";
 
 /**
  * Gets description and price of a pricing item
@@ -53,7 +54,12 @@ const PricingItemComponent = ({ title, pricingType }: TPricingItem) => {
         </div>
         <p>{description}</p>
       </div>
-      <Button className="bottom">Book a Call</Button>
+      <Link
+        href="https://cal.com/paulbg"
+        className={buttonVariants({ variant: "default" })}
+      >
+        Book a Call
+      </Link>
     </div>
   );
 };

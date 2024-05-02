@@ -2,33 +2,17 @@
 
 import Link from "next/link";
 import { buttonVariants } from "../ui/button";
-import { useEffect, useContext } from "react";
+import { useEffect } from "react";
 import anime from "animejs";
-import ScrollContext from "@/context/scrollContext";
-import { Button } from "../ui/button";
 
 /**
  * Call to action component.
- * Allows users to navigate to the features section or get started.
+ * Allows users to navigate to get started.
  * Renders a message that describes the mission of the company. The message is rendered with a fade-in effect.
  *
  * @returns A call to action component that has to be rendered in the hero section
  */
 export const CTA = () => {
-  const targetRef = useContext(ScrollContext);
-
-  /**
-   * Scrolls to the features section when the user clicks on the explore button
-   */
-  const scrollToFeatures = () => {
-    if (targetRef.current) {
-      targetRef.current.scrollIntoView({
-        behavior: "smooth",
-        block: "start",
-      });
-    }
-  };
-
   /**
    * Adds a fade-in effect to the call to action component
    */
@@ -36,8 +20,8 @@ export const CTA = () => {
     anime.timeline({ easing: "linear" }).add({
       targets: ".cta",
       opacity: [0, 1],
-      duration: 2000,
-      delay: 3000,
+      duration: 1500,
+      delay: 2000,
     });
   };
 
@@ -46,7 +30,7 @@ export const CTA = () => {
   }, []);
 
   return (
-    <div className="space-y-3 cta">
+    <div className="space-y-3 cta opacity-0">
       <p className="message">
         At <span className="text-xl font-bold">appstatis</span>, we believe in
         the power of transformation through technology. Our mission is to help
@@ -55,9 +39,6 @@ export const CTA = () => {
       <Link href="" className={`mr-3 ${buttonVariants()}`}>
         Get Started
       </Link>
-      <Button onClick={scrollToFeatures} variant="outline">
-        Explore
-      </Button>
     </div>
   );
 };

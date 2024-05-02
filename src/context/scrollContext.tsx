@@ -1,23 +1,43 @@
 "use client";
 
-import { createContext, useRef, MutableRefObject, ReactNode } from "react";
+import { createContext, useRef, ReactNode } from "react";
 
-const initialRef = { current: null };
-const ScrollContext =
-  createContext<MutableRefObject<HTMLElement | null>>(initialRef);
+interface ScrollContextType {
+  about: React.RefObject<HTMLElement>;
+  faq: React.RefObject<HTMLElement>;
+  pricing: React.RefObject<HTMLElement>;
+  contact: React.RefObject<HTMLElement>;
+}
+
+const initialRefs: ScrollContextType = {
+  about: { current: null },
+  faq: { current: null },
+  pricing: { current: null },
+  contact: { current: null },
+};
+
+const ScrollContext = createContext<ScrollContextType>(initialRefs);
 
 /**
  * This context provides a reference to the target element that should be scrolled to
- * when the user clicks on the "Explore" button in the Hero component.
+ * when a user interacts with a component that triggers a scroll event.
  */
 export default ScrollContext;
 
 export const ScrollProvider = ({ children }: { children: ReactNode }) => {
-  const targetRef = useRef(null);
+  const aboutRef = useRef<HTMLElement>(null);
+  const faqRef = useRef<HTMLElement>(null);
+  const pricingRef = useRef<HTMLElement>(null);
+  const contactRef = useRef<HTMLElement>(null);
+
+  const value = {
+    about: aboutRef,
+    faq: faqRef,
+    pricing: pricingRef,
+    contact: contactRef,
+  };
 
   return (
-    <ScrollContext.Provider value={targetRef}>
-      {children}
-    </ScrollContext.Provider>
+    <ScrollContext.Provider value={value}>{children}</ScrollContext.Provider>
   );
 };

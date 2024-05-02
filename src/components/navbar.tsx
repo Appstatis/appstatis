@@ -1,24 +1,48 @@
-import Link from "next/link";
+"use client";
+
+import { useContext } from "react";
+import ScrollContext from "@/context/scrollContext";
 
 export const Navbar = () => {
+  const { about, pricing, faq, contact } = useContext(ScrollContext);
+
+  const handleScroll = (ref: React.RefObject<HTMLElement>) => {
+    ref.current?.scrollIntoView({
+      behavior: "smooth",
+      block: "center",
+    });
+  };
+
   return (
     <header className="flex h-16 w-full items-center justify-between px-4 md:px-6">
-      <Link className="font-bold flex items-center gap-2" href="#">
+      <span className="font-bold flex items-center gap-2">
         <span>appstatis</span>
-      </Link>
+      </span>
       <nav className="hidden items-center gap-6 text-sm font-medium md:flex">
-        <Link className="hover:underline hover:underline-offset-4" href="#">
+        <button
+          onClick={() => handleScroll(about)}
+          className="hover:underline hover:underline-offset-4"
+        >
           About
-        </Link>
-        <Link className="hover:underline hover:underline-offset-4" href="#">
-          Services
-        </Link>
-        <Link href="" className="hover:underline hover:underline-offset-4">
-          How it works
-        </Link>
-        <Link className="hover:underline hover:underline-offset-4" href="#">
+        </button>
+        <button
+          onClick={() => handleScroll(pricing)}
+          className="hover:underline hover:underline-offset-4"
+        >
+          Pricing
+        </button>
+        <button
+          onClick={() => handleScroll(faq)}
+          className="hover:underline hover:underline-offset-4"
+        >
+          FAQ
+        </button>
+        <button
+          onClick={() => handleScroll(contact)}
+          className="hover:underline hover:underline-offset-4"
+        >
           Contact
-        </Link>
+        </button>
       </nav>
     </header>
   );

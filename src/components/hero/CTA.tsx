@@ -1,9 +1,11 @@
 "use client";
 
-import Link from "next/link";
 import { buttonVariants } from "../ui/button";
 import { useEffect } from "react";
 import anime from "animejs";
+import { handleSmoothScroll } from "@/utils/handleSmoothScroll";
+import { useContext } from "react";
+import ScrollContext from "@/context/scrollContext";
 
 /**
  * Call to action component.
@@ -29,6 +31,8 @@ export const CTA = () => {
     animateCTA();
   }, []);
 
+  const { pricing } = useContext(ScrollContext);
+
   return (
     <div className="space-y-3 cta opacity-0">
       <p className="message">
@@ -36,9 +40,12 @@ export const CTA = () => {
         the power of transformation through technology. Our mission is to help
         you unleash your most ambitious ideas and turn them into reality.
       </p>
-      <Link href="" className={`mr-3 ${buttonVariants()}`}>
+      <button
+        onClick={() => handleSmoothScroll(pricing)}
+        className={`mr-3 ${buttonVariants()}`}
+      >
         Get Started
-      </Link>
+      </button>
     </div>
   );
 };

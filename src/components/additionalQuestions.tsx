@@ -1,4 +1,5 @@
-import { Button } from "./ui/button";
+import Link from "next/link";
+import { buttonVariants } from "./ui/button";
 
 /**
  * @returns A react element that represents a section welcoming users to ask additional questions
@@ -12,7 +13,12 @@ export const AdditionalQuestions = () => {
         </h2>
         <p>Feel free to react out to us</p>
       </header>
-      <Button>Book a Call</Button>
+      <Link
+        href="https://cal.com/paulbg"
+        className={buttonVariants({ variant: "default" })}
+      >
+        Book a Call
+      </Link>
     </section>
   );
 };

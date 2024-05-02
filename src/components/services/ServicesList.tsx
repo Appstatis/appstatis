@@ -1,5 +1,6 @@
 import type { Service as TService } from "@/types/Service";
 import { Service } from "@/components/services/Service";
+import { useAnimateInView } from "@/hooks/useAnimateInView";
 
 /**
  * An implementation of a list of services.
@@ -9,8 +10,13 @@ import { Service } from "@/components/services/Service";
  * @returns A react element that represents a list of services
  */
 export const ServicesList = ({ services }: { services: TService[] }) => {
+  const { ref } = useAnimateInView(".services", {
+    opacity: [0, 1],
+    duration: 3000,
+  });
+
   return (
-    <div className="grid gap-10 grid-cols-3">
+    <div ref={ref} className="opacity-0 grid services gap-10 lg:grid-cols-3">
       {services.map((service) => (
         <Service key={service.title} {...service} />
       ))}

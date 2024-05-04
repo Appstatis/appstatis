@@ -8,7 +8,7 @@ export const Navbar = () => {
   const { about, pricing, faq, contact } = useContext(ScrollContext);
 
   return (
-    <header className="flex h-16 w-full items-center justify-between px-4 md:px-6">
+    <header className="mx-auto max-w-7xl flex h-16 w-full items-center justify-between px-4 md:px-6">
       <span className="font-bold flex items-center gap-2">
         <span>appstatis</span>
       </span>

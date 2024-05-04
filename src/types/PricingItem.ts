@@ -1,4 +1,7 @@
 export type PricingItem = {
   title: string;
-  pricingType: "one-time" | "periodic";
+  cost: number;
+  description: string;
+  type: "one-time" | "periodic";
+  features: string[];
 };

@@ -10,9 +10,9 @@ import { PricingItem } from "@/components/pricing/PricingItem";
  * @returns A react element that represents a list of pricing items
  */
 export const PricingList = ({
-  pricingItems,
+  pricingData,
 }: {
-  pricingItems: TPricingItem[];
+  pricingData: TPricingItem[];
 }) => {
   const { ref } = useAnimateInView(".pricing", {
     opacity: [0, 1],
@@ -20,15 +20,15 @@ export const PricingList = ({
   });
 
   return (
-    <div
-      ref={ref}
-      className="opacity-0 pricing flex gap-10 h-[25rem] justify-center"
-    >
-      {pricingItems.map((pricingItem, index) => (
+    <div ref={ref} className="opacity-0 pricing flex gap-10 justify-center">
+      {pricingData.map((pricingItem, index) => (
         <PricingItem
           key={index}
-          pricingType={pricingItem.pricingType}
           title={pricingItem.title}
+          cost={pricingItem.cost}
+          description={pricingItem.description}
+          features={pricingItem.features}
+          type={pricingItem.type}
         />
       ))}
     </div>

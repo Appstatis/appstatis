@@ -11,10 +11,10 @@ export const FAQItems = ({ faq }: { faq: TFAQItem[] }) => {
   }
 
   return (
-    <>
+    <div className="w-full mx-auto max-w-xl">
       {faq.map((faq, index) => (
         <FAQItem key={index} question={faq.question} answer={faq.answer} />
       ))}
-    </>
+    </div>
   );
 };

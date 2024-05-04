@@ -10,18 +10,18 @@ export const services: Service[] = [
     Icon: AspectRatioIcon,
     title: "Website Design",
     description:
-      "Specializing in creating custom web solutions tailored to meet your unique needs and goals.",
+      "Creating visually stunning, user-centric web designs that ensure a seamless user experience across all devices.",
   },
   {
     Icon: DesktopIcon,
     title: "Website Development",
     description:
-      "Crafting high-quality websites using cutting-edge technologies and innovative design and development approaches.",
+      "Leveraging leading technologies to build fast, responsive websites that enhance user engagement and improve conversion rates.",
   },
   {
     Icon: RocketIcon,
     title: "Website Maintenance",
     description:
-      "Offering services to optimize website performance, as well as regular maintenance and support to ensure seamless operation.",
+      "Providing comprehensive maintenance services including performance optimization, security updates, and timely enhancements to keep your site running smoothly.",
   },
 ];

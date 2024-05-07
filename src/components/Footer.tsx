@@ -1,5 +1,13 @@
 import Link from "next/link";
 
+/**
+ * The footer component.
+ *
+ * It is needed to provide links to the terms of service, privacy policy, and the app's Github repository, and to display the app's name and license.
+ * It uses simple semantic HTML elements to structure the content as well as the Link component from Next.js to navigate to the links.
+ *
+ * @returns A footer component with links to the terms of service, privacy policy, and the app's Github repository
+ */
 export const Footer = () => {
   return (
     <footer className="py-6">

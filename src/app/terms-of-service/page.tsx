@@ -2,6 +2,14 @@ import Link from "next/link";
 import { buttonVariants } from "@/components/ui/button";
 import { Header } from "@/components/privacyAndTerms/Header";
 
+/**
+ * The Terms of Service page.
+ *
+ * It uses simple semantic HTML elements to structure the content.
+ * It also uses Link from Next.js to navigate to the home page, and the Header component to render section titles.
+ *
+ * @returns A react element that represents the Terms of Service page
+ */
 export default function TermsOfService() {
   return (
     <main className="max-w-3xl mx-auto my-10">

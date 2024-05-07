@@ -1,3 +1,6 @@
+import { Navbar } from "@/components/Navbar";
+import { Footer } from "@/components/Footer";
+
 import { Hero } from "@/components/hero/Hero";
 import { Services } from "@/components/services/Services";
 import { Features } from "@/components/features/Features";
@@ -6,7 +9,7 @@ import { Pricing } from "@/components/pricing/Pricing";
 import { AdditionalQuestions } from "@/components/AdditionalQuestions";
 import { Contact } from "@/components/contact/Contact";
 
-export default function Home() {
+const HomeSections = () => {
   return (
     <>
       <Hero />
@@ -16,6 +19,16 @@ export default function Home() {
       <FAQ />
       <AdditionalQuestions />
       <Contact />
+    </>
+  );
+};
+
+export default function Home() {
+  return (
+    <>
+      <Navbar />
+      <HomeSections />
+      <Footer />
     </>
   );
 }

@@ -18,15 +18,16 @@ const ServiceComponent = ({ Icon, title, description }: TService) => {
   const { pricing } = useContext(ScrollContext);
 
   return (
-    <div className="h-full w-full text-center flex flex-col gap-5 justify-between border-gray-800 border rounded-xl p-8 shadow-xl transition hover:shadow-white/10">
+    <div
+      onClick={() => handleSmoothScroll(pricing)}
+      className="h-full hover:cursor-pointer w-full text-center flex flex-col gap-5 justify-between border-gray-800 border rounded-xl p-8 shadow-xl transition hover:shadow-white/10"
+    >
       <article className="flex-col flex justify-stretch gap-2">
         <Icon width={25} height={25} className="self-center" />
         <h3 className="font-bold text-2xl">{title}</h3>
         <p>{description}</p>
       </article>
-      <Button variant="outline" onClick={() => handleSmoothScroll(pricing)}>
-        Get Started
-      </Button>
+      <Button>Get Started</Button>
     </div>
   );
 };

@@ -18,7 +18,7 @@ const PricingItemComponent = ({
   type,
 }: TPricingItem) => {
   return (
-    <div className="h-full w-72 flex flex-col border-gray-800 border rounded-xl justify-between p-8 shadow-xl transition hover:shadow-white/10 space-y-5">
+    <div className="h-full  flex flex-col border-gray-800 border rounded-xl justify-between p-8 shadow-xl transition hover:shadow-white/10 space-y-5">
       <div className="space-y-3">
         <header>
           <h3 className="font-bold text-2xl">{title}</h3>

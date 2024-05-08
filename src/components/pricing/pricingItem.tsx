@@ -18,6 +18,7 @@ const PricingItemComponent = ({
   type,
 }: TPricingItem) => {
   const isPeriodic = type === "periodic";
+  const isOneTime = type === "one-time";
   return (
     <div
       className={`h-full flex flex-col border-gray-800 lg:w-72 border rounded-xl justify-between p-8 shadow-xl transition space-y-5 ${
@@ -32,6 +33,7 @@ const PricingItemComponent = ({
         <div>
           {type && <span className="text-3xl">${cost}</span>}
           <span>{isPeriodic && <span className="text-md">/mo</span>}</span>
+          <span>{isOneTime && <span className="text-3xl">+</span>}</span>
         </div>
         {features && (
           <ul className="space-y-2 list-disc">

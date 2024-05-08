@@ -2,9 +2,9 @@
 
 import { useContext } from "react";
 import ScrollContext from "@/context/scrollContext";
-import { FAQItems } from "@/components/faq/FAQItems";
+import { FAQItems } from "./faqItems";
 import { FAQ as FAQData } from "@/data/faq";
-import { Header } from "@/components/Header";
+import { Header } from "../header";
 
 /**
  * This component abstracts the complexity of FAQItems and FAQItem.

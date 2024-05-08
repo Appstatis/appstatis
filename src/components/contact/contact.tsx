@@ -2,8 +2,8 @@
 
 import { useContext } from "react";
 import ScrollContext from "@/context/scrollContext";
-import { Header } from "@/components/Header";
-import { ContactForm } from "@/components/contact/ContactForm";
+import { Header } from "../header";
+import { ContactForm } from "./contactForm";
 
 /**
  * Contact section component that wraps the <ContactForm /> component and adds additional styling and text.

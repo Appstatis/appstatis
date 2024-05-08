@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { FeaturesList } from "@/components/features/FeaturesList";
+import { FeaturesList } from "./featuresList";
 import { featuresList } from "../../data/featuresList";
 
 /**

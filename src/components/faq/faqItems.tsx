@@ -1,4 +1,4 @@
-import { FAQItem } from "@/components/faq/faqItem";
+import { FAQItem } from "@/components/faq/FAQItem";
 import type { FAQItem as TFAQItem } from "@/types/FAQItem";
 
 /**

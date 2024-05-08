@@ -1,6 +1,6 @@
 "use client";
 
-import { Header } from "@/components/Header";
+import { Header } from "../Header";
 import { ServicesList } from "@/components/services/ServicesList";
 import { services } from "@/data/services";
 import ScrollContext from "@/context/scrollContext";

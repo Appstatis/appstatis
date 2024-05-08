@@ -112,7 +112,7 @@ export default function TermsOfService() {
           <p>If you have any questions about these Terms, please contact us.</p>
         </footer>
 
-        <p>Last updated: 7 March 2023.</p>
+        <time dateTime="2023-03-07">Last updated: 7 March 2023.</time>
       </article>
     </main>
   );

@@ -18,7 +18,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <ScrollProvider>{children}</ScrollProvider>
+        <ScrollProvider>
+          <div className="lg:px-0 px-5">{children}</div>
+        </ScrollProvider>
       </body>
     </html>
   );

@@ -1,8 +1,6 @@
 "use client";
 
-import React, { useEffect } from "react";
-import { useInView } from "react-intersection-observer";
-import anime from "animejs";
+import React from "react";
 import { FeaturesList } from "@/components/features/FeaturesList";
 import { featuresList } from "../../data/featuresList";
 

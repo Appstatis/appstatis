@@ -7,7 +7,7 @@ import { Feature as TFeature } from "@/types/Feature";
  */
 const FeatureComponent = ({ Icon, title, description }: TFeature) => {
   return (
-    <div className="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:shadow-white/10">
+    <div className="block rounded-xl border border-gray-800 p-8 shadow-xl">
       <Icon width={22} height={22} color="white" />
 
       <h2 className="mt-4 text-xl font-bold text-white">{title}</h2>

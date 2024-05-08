@@ -20,7 +20,10 @@ export const PricingList = ({
   });
 
   return (
-    <div ref={ref} className="opacity-0 pricing flex gap-10 justify-center">
+    <div
+      ref={ref}
+      className="opacity-0 pricing mx-auto flex flex-col lg:flex-row gap-10 justify-center"
+    >
       {pricingData.map((pricingItem, index) => (
         <PricingItem
           key={index}

@@ -17,33 +17,36 @@ const PricingItemComponent = ({
   features,
   type,
 }: TPricingItem) => {
+  const isPeriodic = type === "periodic";
+  const isOneTime = type === "one-time";
   return (
-    <div className="h-full w-72 flex flex-col border-gray-800 border rounded-xl justify-between p-8 shadow-xl transition hover:shadow-white/10 space-y-5">
+    <div
+      className={`h-full flex flex-col border-gray-800 lg:w-72 border rounded-xl justify-between p-8 shadow-xl transition space-y-5 ${
+        isPeriodic && "shadow-white/30 scale-105"
+      }`}
+    >
       <div className="space-y-3">
         <header>
           <h3 className="font-bold text-2xl">{title}</h3>
           <p className="text-sm">{description}</p>
         </header>
         <div>
-          <span className="text-3xl">${cost}</span>
-          <span>
-            {type === "periodic" ? (
-              <span className="text-md">/mo</span>
-            ) : (
-              <span className="text-3xl">+</span>
-            )}
-          </span>
+          {type && <span className="text-3xl">${cost}</span>}
+          <span>{isPeriodic && <span className="text-md">/mo</span>}</span>
+          <span>{isOneTime && <span className="text-3xl">+</span>}</span>
         </div>
-        <ul className="space-y-2 list-disc">
-          {features.map((feature, index) => (
-            <li key={index} className="text-sm">
-              {feature}
-            </li>
-          ))}
-        </ul>
+        {features && (
+          <ul className="space-y-2 list-disc">
+            {features.map((feature, index) => (
+              <li key={index} className="text-sm">
+                {feature}
+              </li>
+            ))}
+          </ul>
+        )}
       </div>
       <Link
-        href="https://cal.com/paulbg"
+        href="https://cal.com/appstatis"
         className={buttonVariants({ variant: "default" })}
       >
         Book a Call

@@ -2,9 +2,9 @@
 
 import { useContext } from "react";
 import ScrollContext from "@/context/scrollContext";
-import { Header } from "../Header";
+import { Header } from "../header";
 import { pricing as pricingData } from "@/data/pricing";
-import { PricingList } from "@/components/pricing/PricingList";
+import { PricingList } from "./pricingList";
 
 /**
  * This component abstracts the complexity of PricingList and PricingItem

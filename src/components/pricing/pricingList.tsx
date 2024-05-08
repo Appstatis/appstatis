@@ -1,6 +1,6 @@
 import { useAnimateInView } from "@/hooks/useAnimateInView";
 import type { PricingItem as TPricingItem } from "@/types/PricingItem";
-import { PricingItem } from "@/components/pricing/PricingItem";
+import { PricingItem } from "./pricingItem";
 
 /**
  * This component renders a list of PricingItem components

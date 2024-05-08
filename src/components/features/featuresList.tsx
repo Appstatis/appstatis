@@ -1,5 +1,5 @@
-import { Header } from "@/components/Header";
-import { Feature } from "@/components/features/Feature";
+import { Header } from "../header";
+import { Feature } from "./feature";
 import { Feature as TFeature } from "@/types/Feature";
 import { useAnimateInView } from "@/hooks/useAnimateInView";
 

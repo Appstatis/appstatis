@@ -22,7 +22,7 @@ export const PricingList = ({
   return (
     <div
       ref={ref}
-      className="opacity-0 pricing mx-auto max-w-2xl flex flex-col lg:flex-row gap-10 justify-center"
+      className="opacity-0 pricing mx-auto flex flex-col lg:flex-row gap-10 justify-center"
     >
       {pricingData.map((pricingItem, index) => (
         <PricingItem

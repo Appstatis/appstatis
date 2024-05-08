@@ -11,7 +11,7 @@ import { Contact } from "@/components/contact/Contact";
 
 const HomeSections = () => {
   return (
-    <>
+    <div className="space-y-10">
       <Hero />
       <Services />
       <Features />
@@ -19,7 +19,7 @@ const HomeSections = () => {
       <FAQ />
       <AdditionalQuestions />
       <Contact />
-    </>
+    </div>
   );
 };
 

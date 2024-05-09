@@ -21,7 +21,7 @@ export const pricing: PricingItem[] = [
     features: [
       "5 pages.",
       "Comprehensive technical support.",
-      "Free hosting and domain registration.",
+      "Free hosting.",
       "Continuous maintenance and proactive support.",
       "Bug fixes and performance enhancements.",
       "Note: Additional charges for third-party services may apply.",

@@ -12,7 +12,7 @@ export const Navbar = () => {
       <span className="font-bold flex items-center gap-2">
         <span>appstatis</span>
       </span>
-      <nav className="hidden items-center gap-6 text-sm font-medium md:flex">
+      <nav className="items-center gap-6 text-sm font-medium flex">
         <button
           onClick={() => handleSmoothScroll(about)}
           className="hover:underline hover:underline-offset-4"

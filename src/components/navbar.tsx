@@ -15,25 +15,25 @@ export const Navbar = () => {
       <nav className="items-center gap-6 text-sm font-medium flex">
         <button
           onClick={() => handleSmoothScroll(about)}
-          className="hover:underline hover:underline-offset-4"
+          className="relative after:block after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full after:scale-x-0 after:bg-white after:transition-transform after:duration-300 hover:after:scale-x-100"
         >
           About
         </button>
         <button
           onClick={() => handleSmoothScroll(pricing)}
-          className="hover:underline hover:underline-offset-4"
+          className="relative after:block after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full after:scale-x-0 after:bg-white after:transition-transform after:duration-300 hover:after:scale-x-100"
         >
           Pricing
         </button>
         <button
           onClick={() => handleSmoothScroll(faq)}
-          className="hover:underline hover:underline-offset-4"
+          className="relative after:block after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full after:scale-x-0 after:bg-white after:transition-transform after:duration-300 hover:after:scale-x-100"
         >
           FAQ
         </button>
         <button
           onClick={() => handleSmoothScroll(contact)}
-          className="hover:underline hover:underline-offset-4"
+          className="relative after:block after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full after:scale-x-0 after:bg-white after:transition-transform after:duration-300 hover:after:scale-x-100"
         >
           Contact
         </button>

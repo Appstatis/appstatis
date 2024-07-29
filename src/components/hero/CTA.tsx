@@ -1,6 +1,5 @@
 "use client";
 
-import { buttonVariants } from "../ui/button";
 import { useEffect } from "react";
 import anime from "animejs";
 import { handleSmoothScroll } from "@/utils/handleSmoothScroll";
@@ -34,7 +33,7 @@ export const CTA = () => {
   const { pricing } = useContext(ScrollContext);
 
   return (
-    <div className="space-y-3 cta opacity-0">
+    <div className="space-y-5 cta opacity-0">
       <p className="message">
         At <span className="text-xl font-bold">appstatis</span>, we believe in
         the power of transformation through technology. Our mission is to help
@@ -42,7 +41,7 @@ export const CTA = () => {
       </p>
       <button
         onClick={() => handleSmoothScroll(pricing)}
-        className={`mr-3 ${buttonVariants()}`}
+        className="font-bold text-black bg-white py-2 px-4 rounded-xl border-4 border-white transition duration-500 hover:text-white hover:bg-gray-900"
       >
         Get Started
       </button>

@@ -1,15 +1,8 @@
 "use client";
 
-import { useContext, useState } from "react";
+import { useContext } from "react";
 import ScrollContext from "@/context/scrollContext";
 import { handleSmoothScroll } from "@/utils/handleSmoothScroll";
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
-import { TextAlignJustifyIcon } from "@radix-ui/react-icons";
 
 const NavControls = () => {
   const { about, pricing, faq, contact } = useContext(ScrollContext);
@@ -23,28 +16,7 @@ const NavControls = () => {
 
   return (
     <nav>
-      {/* <article className="md:hidden">
-        <DropdownMenu>
-          <DropdownMenuTrigger>
-            <TextAlignJustifyIcon
-              width={26}
-              height={26}
-              className="rounded-full duration-200 hover:bg-gray-700"
-            />
-          </DropdownMenuTrigger>
-          <DropdownMenuContent>
-            {navLinks.map((link) => (
-              <DropdownMenuItem
-                key={link.name}
-                onClick={(event) => handleSmoothScroll(link.href, event)}
-              >
-                {link.name}
-              </DropdownMenuItem>
-            ))}
-          </DropdownMenuContent>
-        </DropdownMenu>
-      </article> */}
-      <article className="items-center hidden md:flex gap-6 text-sm font-medium">
+      <article className="items-center flex gap-3 md:gap-6 text-sm font-medium">
         {navLinks.map((link) => (
           <button
             key={link.name}
@@ -62,8 +34,8 @@ const NavControls = () => {
 export const Navbar = () => {
   return (
     <header className="mx-auto max-w-7xl flex h-16 w-full items-center justify-between px-4 md:px-6">
-      <span className="font-bold flex items-center gap-2">
-        <span>appstatis</span>
+      <span className="font-black text-xl flex items-center gap-2">
+        <span>as.</span>
       </span>
 
       <NavControls />

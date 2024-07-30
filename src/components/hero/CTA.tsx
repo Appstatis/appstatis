@@ -1,5 +1,6 @@
 "use client";
 
+import useTranslation from "next-translate/useTranslation";
 import { useEffect } from "react";
 import anime from "animejs";
 import { handleSmoothScroll } from "@/utils/handleSmoothScroll";
@@ -32,6 +33,8 @@ export const CTA = () => {
 
   const { pricing } = useContext(ScrollContext);
 
+  const { t } = useTranslation("common");
+
   return (
     <div className="space-y-5 cta opacity-0">
       <p className="message">
@@ -43,7 +46,7 @@ export const CTA = () => {
         onClick={() => handleSmoothScroll(pricing)}
         className="font-bold text-black bg-white py-2 px-4 rounded-xl border-4 border-white transition duration-500 hover:text-white hover:bg-gray-900"
       >
-        Get Started
+        {t("getStarted")}
       </button>
     </div>
   );

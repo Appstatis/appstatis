@@ -8,6 +8,7 @@ import { FAQ } from "@/components/faq/faq";
 import { Pricing } from "@/components/pricing/pricing";
 import { AdditionalQuestions } from "@/components/additionalQuestions";
 import { Contact } from "@/components/contact/contact";
+import { About } from "@/components/about/about";
 
 const HomeSections = () => {
   return (
@@ -15,6 +16,7 @@ const HomeSections = () => {
       <Hero />
       <Services />
       <Features />
+      <About />
       <Pricing />
       <FAQ />
       <AdditionalQuestions />

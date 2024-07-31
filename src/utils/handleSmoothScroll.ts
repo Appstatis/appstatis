@@ -17,7 +17,7 @@ export const handleSmoothScroll = (
   if (ref && ref.current && typeof ref.current.scrollIntoView === "function") {
     ref.current.scrollIntoView({
       behavior: "smooth",
-      block: "start",
+      block: "center",
     });
   }
 };

@@ -3,6 +3,7 @@
 import { createContext, useRef, ReactNode } from "react";
 
 interface ScrollContextType {
+  services: React.RefObject<HTMLElement>;
   about: React.RefObject<HTMLElement>;
   faq: React.RefObject<HTMLElement>;
   pricing: React.RefObject<HTMLElement>;
@@ -10,6 +11,7 @@ interface ScrollContextType {
 }
 
 const initialRefs: ScrollContextType = {
+  services: { current: null },
   about: { current: null },
   faq: { current: null },
   pricing: { current: null },
@@ -25,12 +27,14 @@ const ScrollContext = createContext<ScrollContextType>(initialRefs);
 export default ScrollContext;
 
 export const ScrollProvider = ({ children }: { children: ReactNode }) => {
+  const servicesRef = useRef<HTMLElement>(null);
   const aboutRef = useRef<HTMLElement>(null);
   const faqRef = useRef<HTMLElement>(null);
   const pricingRef = useRef<HTMLElement>(null);
   const contactRef = useRef<HTMLElement>(null);
 
   const value = {
+    services: servicesRef,
     about: aboutRef,
     faq: faqRef,
     pricing: pricingRef,

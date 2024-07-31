@@ -1,8 +1,14 @@
 import { BeautifulLink } from "../beautiful-link";
+import { useAnimateInView } from "@/hooks/useAnimateInView";
 
 export const AboutContent = () => {
+  const { ref } = useAnimateInView(".about", {
+    opacity: [0, 1],
+    duration: 3000,
+  });
+
   return (
-    <article className="space-y-4">
+    <article ref={ref} className="about space-y-4 opacity-0">
       <p>
         Welcome to <strong>appstatis</strong>! I&apos;m <strong>Paul</strong>, a
         dedicated web designer and developer here to bring your online vision to

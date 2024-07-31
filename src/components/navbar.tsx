@@ -5,9 +5,10 @@ import ScrollContext from "@/context/scrollContext";
 import { handleSmoothScroll } from "@/utils/handleSmoothScroll";
 
 const NavControls = () => {
-  const { about, pricing, faq, contact } = useContext(ScrollContext);
+  const { about, services, pricing, faq, contact } = useContext(ScrollContext);
 
   const navLinks = [
+    { name: "Services", href: services },
     { name: "About", href: about },
     { name: "Pricing", href: pricing },
     { name: "FAQ", href: faq },

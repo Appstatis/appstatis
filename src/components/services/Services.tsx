@@ -13,11 +13,11 @@ import { useContext } from "react";
  * @returns A react element that represents a section with a list of services
  */
 export const Services = () => {
-  const { about } = useContext(ScrollContext);
+  const { services: servicesRef } = useContext(ScrollContext);
 
   return (
     <section
-      ref={about}
+      ref={servicesRef}
       className="grid mx-auto min-h-[50vh] max-w-5xl justify-center"
     >
       <article className="space-y-6">

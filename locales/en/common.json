@@ -1,3 +1,145 @@
 {
-  "getStarted": "Get Started"
+  "navbar": {
+    "services": "Services",
+    "about": "About",
+    "pricing": "Pricing",
+    "faq": "FAQ",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Unleash ideas Embrace Innovation",
+    "description": "At appstatis, we believe in the power of transformation through technology. Our mission is to help you unleash your most ambitious ideas and turn them into reality.",
+    "getStarted": "Get Started"
+  },
+  "services": {
+    "title": "Services",
+    "description": "We offer a wide range of services to help you achieve your goals. From website design to web development, we have the expertise to deliver your vision to life.",
+    "options": [
+      {
+        "title": "Website Design",
+        "description": "Creating visually stunning, user-centric web designs that ensure a seamless user experience across all devices."
+      },
+      {
+        "title": "Web Development",
+        "description": "Leveraging leading technologies to build fast, responsive websites that enhance user engagement and improve conversion rates."
+      },
+      {
+        "title": "Website Maintenance",
+        "description": "Providing comprehensive maintenance services including performance optimization, security updates, and timely enhancements to keep your site running smoothly."
+      }
+    ]
+  },
+  "features": {
+    "title": "What we promise you",
+    "description": "Expert web development services that are available around the clock, ensuring personalized and technology-driven solutions to meet your project needs, allowing you to focus on your core business while we handle your web development requirements.",
+    "options": [
+      {
+        "title": "Transparent Processes",
+        "description": "We promise full transparency in all our dealings, giving you insight into every stage of our process."
+      },
+      {
+        "title": "Flexible Communication",
+        "description": "We prioritize efficient, meeting-free interactions, but are ready to meet when needed."
+      },
+      {
+        "title": "Tailored Solutions",
+        "description": "Understanding your needs is our top priority. We promise personalized solutions that are tailored to meet your unique challenges and objectives."
+      },
+      {
+        "title": "Innovation and Excellence",
+        "description": "We utilize modern, sleek, and optimized technologies to build superior web applications that offer the best performance in the market."
+      },
+      {
+        "title": "Unlimited Requests",
+        "description": "We offer unlimited support—no matter how many requests you have, we're here to make each one happen."
+      },
+      {
+        "title": "Support and Aftercare",
+        "description": "We promise ongoing support and aftercare, ensuring that you continue to benefit from our services long after the initial purchase."
+      }
+    ]
+  },
+  "about": {
+    "title": "What is appstatis?",
+    "message": [
+      "Welcome to appstatis! I'm Paul, a dedicated web designer and developer here to bring your online vision to life. As a solo entrepreneur, I offer personalized, one-on-one service to ensure your website truly reflects your brand and meets your unique needs.",
+      "Currently, I'm a fourth-grade software engineering student at Tallinna Polütehnikum and an enthusiastic intern in the field. My fresh perspective and eagerness to embrace innovative solutions set me apart. I'm committed to staying on the cutting edge of web design and development, ready to tackle any challenge and bring creative ideas to your projects.",
+      "For more information as well as my social media profiles, visit my personal page or contact me directly at:",
+      "Email: paul@appstatis.com",
+      "Looking forward to working with you!"
+    ]
+  },
+  "pricing": {
+    "title": "Pricing",
+    "description": "Our pricing is designed to be simple and transparent. We offer a variety of pricing options to suit your needs.",
+    "options": [
+      {
+        "title": "One Time",
+        "description": "Tailored for quick resolutions without ongoing obligations.",
+        "price": "$600",
+        "features": [
+          "5 pages.",
+          "All-inclusive technical support.",
+          "Post-launch support at $20/hr.",
+          "Excludes third-party expenses."
+        ]
+      },
+      {
+        "title": "Periodic",
+        "description": "Ideal for small businesses and startups.",
+        "price": "$150",
+        "features": [
+          "5 pages.",
+          "Comprehensive technical support.",
+          "Continuous maintenance and proactive support.",
+          "Bug fixes and performance enhancements.",
+          "Note: Additional charges for third-party services may apply."
+        ]
+      },
+      {
+        "title": "Custom",
+        "description": "Have a unique project in mind? Let's discuss your requirements and come up with a custom plan that suits your needs."
+      }
+    ]
+  },
+  "faq": {
+    "title": "Answers to some questions that might pop up in your mind",
+    "questions": [
+      {
+        "title": "How is communication handled during the project?",
+        "answer": "We manage our projects using Basecamp, a robust project management tool where you can add tasks, track progress, and communicate directly with us. If you prefer alternative communication methods, we are flexible and can also coordinate via email, phone, or any other channel that suits your convenience."
+      },
+      {
+        "title": "How do you handle payment?",
+        "answer": "We offer a convenient auto-renewable subscription model for our fixed services, managed through Stripe to ensure secure and hassle-free payments. For specific projects or additional services outside the regular subscription, we will issue an invoice directly to you. This allows us to tailor our billing to your specific needs and service usage."
+      },
+      {
+        "title": "How do I cancel my subscription?",
+        "answer": "To cancel your subscription, simply contact us directly via email or phone, and we will guide you through the process. Please note that your subscription will remain active until the end of the current billing period, allowing you to continue accessing our services until then."
+      },
+      {
+        "title": "What support do you offer post-launch?",
+        "answer": "Post-launch, we offer comprehensive support to ensure your website continues to run smoothly. This includes technical support, bug fixes, performance optimizations, and content updates, tailored to keep your site up-to-date and performing optimally."
+      },
+      {
+        "title": "What if I need changes or updates during the project?",
+        "answer": "We understand that project requirements can evolve. If you need any changes or updates, please communicate them through Basecamp or your preferred communication method. We are committed to accommodating your needs and ensuring the project aligns with your vision."
+      }
+    ]
+  },
+  "additionalQuestions": {
+    "title": "Don't see your question here?",
+    "message": "Feel free to reach out to us"
+  },
+  "contact": {
+    "title": "Text us instead!",
+    "message": "In case you don't have much time for calls or just hate them",
+    "form": {
+      "username": "Username",
+      "email": "Email",
+      "company": "Company",
+      "message": "Message",
+      "submit": "Submit"
+    }
+  }
 }

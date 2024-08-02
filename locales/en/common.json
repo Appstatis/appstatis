@@ -1,4 +1,7 @@
 {
+  "common": {
+    "buttonBack": "Back"
+  },
   "navbar": {
     "services": "Services",
     "about": "About",
@@ -6,9 +9,20 @@
     "faq": "FAQ",
     "contact": "Contact"
   },
+  "footer": {
+    "links": {
+      "termsOfService": "Terms of Service",
+      "privacyPolicy": "Privacy Policy",
+      "github": "Github"
+    },
+    "copyright": {
+      "message": "© 2024 appstatis. All rights reserved.",
+      "license": "This app is open source and licensed under the <licenseLink>Apache License 2.0</licenseLink>"
+    }
+  },
   "hero": {
     "title": "Unleash ideas Embrace Innovation",
-    "description": "At appstatis, we believe in the power of transformation through technology. Our mission is to help you unleash your most ambitious ideas and turn them into reality.",
+    "description": "At <bold>{{appName}}</bold>, we believe in the power of transformation through technology. Our mission is to help you unleash your most ambitious ideas and turn them into reality.",
     "getStarted": "Get Started"
   },
   "services": {
@@ -61,13 +75,7 @@
   },
   "about": {
     "title": "What is appstatis?",
-    "message": [
-      "Welcome to appstatis! I'm Paul, a dedicated web designer and developer here to bring your online vision to life. As a solo entrepreneur, I offer personalized, one-on-one service to ensure your website truly reflects your brand and meets your unique needs.",
-      "Currently, I'm a fourth-grade software engineering student at Tallinna Polütehnikum and an enthusiastic intern in the field. My fresh perspective and eagerness to embrace innovative solutions set me apart. I'm committed to staying on the cutting edge of web design and development, ready to tackle any challenge and bring creative ideas to your projects.",
-      "For more information as well as my social media profiles, visit my personal page or contact me directly at:",
-      "Email: paul@appstatis.com",
-      "Looking forward to working with you!"
-    ]
+    "message": "<p>Welcome to appstatis! I'm <strong>Paul</strong>, a dedicated web designer and developer here to bring your online vision to life. As a solo entrepreneur, I offer personalized, one-on-one service to ensure your website truly reflects your brand and meets your unique needs.</p> <p>Currently, I'm a fourth-grade software engineering student at Tallinna Polütehnikum and an enthusiastic intern in the field. My fresh perspective and eagerness to embrace innovative solutions set me apart. I'm committed to staying on the cutting edge of web design and development, ready to tackle any challenge and bring creative ideas to your projects.</p> <p>For more information as well as my social media profiles, visit my <website>personal page</website> or contact me directly at:</p> <p>Email: <email>paul@appstatis.com</email></p> <p>Looking forward to working with you!</p>"
   },
   "pricing": {
     "title": "Pricing",
@@ -129,7 +137,8 @@
   },
   "additionalQuestions": {
     "title": "Don't see your question here?",
-    "message": "Feel free to reach out to us"
+    "message": "Feel free to reach out to us",
+    "submit": "Submit"
   },
   "contact": {
     "title": "Text us instead!",
@@ -139,7 +148,98 @@
       "email": "Email",
       "company": "Company",
       "message": "Message",
-      "submit": "Submit"
+      "submit": "Submit",
+      "errors": {
+        "name": "Name must be at least 2 characters long",
+        "email": "Invalid email address",
+        "message": "Message must be at least 10 characters long"
+      }
+    }
+  },
+  "termsOfService": {
+    "title": "Terms of Service",
+    "description": "Welcome to Appstatis! These terms and conditions outline the rules and regulations for the use of Appstatis's Website, located at www.appstatis.com.",
+    "content": {
+      "section1": {
+        "title": "Acceptance of Terms",
+        "description": "By accessing this website we assume you accept these terms and conditions. Do not continue to use Appstatis if you do not agree to take all of the terms and conditions stated on this page."
+      },
+      "section2": {
+        "title": "Payments",
+        "description": "Appstatis offers services under both a one-time payment and a subscription-based model. Details about the scope of services, as well as any fees associated with these services, will be provided on our website or through a direct communication with you."
+      },
+      "section3": {
+        "title": "Subscription Terms",
+        "description": "For subscription-based services, you will be billed in advance on a recurring and periodic basis. Your subscription will automatically renew under the exact same conditions unless you cancel it or Appstatis cancels it. A valid payment method, including credit card, is required to process the payment for your subscription."
+      },
+      "section4": {
+        "title": "Refunds",
+        "description": "Refunds for services by Appstatis are only available under specific circumstances. A non-refundable deposit is required at the start of any project to cover initial resources and labor costs. Should you choose to discontinue the project part-way, a refund may be considered on a pro-rata basis, based on the completion status of the project. All requests for refunds must be made formally in writing within 7 days of the last submitted milestone. We reserve the right to first attempt to rectify any issues before issuing a refund."
+      },
+      "section5": {
+        "title": "Cancellation",
+        "description": "You may cancel your subscription at any time. Please note that there will be no refunds for the fees already paid, except as may be required by applicable law."
+      },
+      "section6": {
+        "title": "Modifications to Service and Prices",
+        "description": "Prices for our services are subject to change without notice. We reserve the right at any time to modify or discontinue the Service (or any part or content thereof) without notice at any time."
+      },
+      "section7": {
+        "title": "Governing Law",
+        "description": "These Terms shall be governed by and construed in accordance with the laws of the Republic of Estonia, without regard to its conflict of law provisions. Our failure to enforce any right or provision of these Terms will not be considered a waiver of those rights. If any provision of these Terms is held to be invalid or unenforceable by a court, the remaining provisions of these Terms will remain in effect. These Terms constitute the entire agreement between us regarding our Service, and supersede and replace any prior agreements we might have had between us regarding the Service."
+      },
+      "section8": {
+        "title": "Changes to Terms",
+        "description": "We reserve the right, at our sole discretion, to modify or replace these Terms at any time. If a revision is material we will provide at least 30 days' notice prior to any new terms taking effect. What constitutes a material change will be determined at our sole discretion."
+      },
+      "footer": {
+        "title": "Contact Us",
+        "description": "If you have any questions about these Terms, please contact us at <emailLink>paul@appstatis.com</emailLink>",
+        "lastUpdated": "Last updated: 7 March 2023."
+      }
+    }
+  },
+  "privacyPolicy": {
+    "title": "Privacy Policy",
+    "description": "Your privacy is important to us. It is Appstatis's policy to respect your privacy regarding any information we may collect from you across our website, and other sites we own and operate.",
+    "content": {
+      "section1": {
+        "title": "Information We Collect",
+        "description": "We only ask for personal information when we truly need it to provide a service to you. We collect it by fair and lawful means, with your knowledge and consent. We also let you know why we're collecting it and how it will be used."
+      },
+      "section2": {
+        "title": "Use of Information",
+        "description": "The information we collect is used to enhance the services we offer, to personalize your user experience, and to prefill your Appstatis account details where applicable."
+      },
+      "section3": {
+        "title": "Retention of Information",
+        "description": "We only retain collected information for as long as necessary to provide you with your requested service. What data we store, we'll protect within commercially acceptable means to prevent loss and theft, as well as unauthorized access, disclosure, copying, use, or modification."
+      },
+      "section4": {
+        "title": "Sharing of Information",
+        "description": "We don't share any personally identifying information publicly or with third-parties, except when required to by law."
+      },
+      "section5": {
+        "title": "Data Protection",
+        "description": "Appstatis acts in the capacity of both a data controller and a data processor with regard to the personal data processed through our services in terms of the applicable data protection laws, including the EU General Data Protection Regulation (GDPR)."
+      },
+      "section6": {
+        "title": "External Sites",
+        "description": "Our website may link to external sites that are not operated by us. Please be aware that we have no control over the content and practices of these sites and cannot accept responsibility or liability for their respective privacy policies."
+      },
+      "section7": {
+        "title": "Your Rights",
+        "description": "You are free to refuse our request for your personal information, with the understanding that we may be unable to provide you with some of your desired services."
+      },
+      "section8": {
+        "title": "Acceptance of This Policy",
+        "description": "Your continued use of our website will be regarded as acceptance of our practices around privacy and personal information."
+      },
+      "footer": {
+        "title": "Contact Us",
+        "description": "If you have any questions about these Terms, please contact us at <emailLink>paul@appstatis.com</emailLink>",
+        "lastUpdated": "Last updated: 7 March 2023."
+      }
     }
   }
 }

@@ -1,4 +1,7 @@
 {
+  "common": {
+    "buttonBack": "Tagasi"
+  },
   "navbar": {
     "services": "Teenused",
     "about": "Meist",
@@ -6,9 +9,20 @@
     "faq": "KKK",
     "contact": "Kontakt"
   },
+  "footer": {
+    "links": {
+      "termsOfService": "Kasutustingimused",
+      "privacyPolicy": "Privaatsuspoliitika",
+      "github": "Github"
+    },
+    "copyright": {
+      "message": "© 2024 appstatis. Kõik õigused kaitstud.",
+      "license": "See rakendus on avatud lähtekoodiga ja litsentseeritud <licenseLink>Apache License 2.0</licenseLink> alusel"
+    }
+  },
   "hero": {
     "title": "Vabasta ideed, omaks innovatsiooni",
-    "description": "appstatis usume tehnoloogia jõusse muuta maailma. Meie missiooniks on aidata teil vabastada oma ambitsioonikaimad ideed ja muuta need reaalsuseks.",
+    "description": "<bold>appstatis </bold> usume tehnoloogia jõusse muuta maailma. Meie missiooniks on aidata teil vabastada oma ambitsioonikaimad ideed ja muuta need reaalsuseks.",
     "getStarted": "Alusta"
   },
   "services": {
@@ -61,13 +75,7 @@
   },
   "about": {
     "title": "Mis on appstatis?",
-    "message": [
-      "Tere tulemast appstatisesse! Olen Paul, pühendunud veebidisainer ja -arendaja, kes aitab teil ellu viia teie veebivisiooni. Individuaalse ettevõtjana pakun personaalset, üks-ühele teenust, et tagada teie veebisaidi tõeline peegeldus teie brändist ja vastaks teie ainulaadsetele vajadustele.",
-      "Praegu olen Tallinna Polütehnikumi neljanda kursuse tarkvaraarenduse üliõpilane ja innukas intern. Minu värske vaatenurk ja valmidus omaks võtta innovaatilisi lahendusi eristavad mind. Olen pühendunud sellele, et olla veebidisaini ja -arenduse esirinnas, valmis võtma vastu kõik väljakutsed ja tooma teie projektidesse loomingulisi ideid.",
-      "Lisainformatsiooni saamiseks ja minu sotsiaalmeedia profiilide külastamiseks külastage minu isiklikku lehte või võtke minuga otse ühendust aadressil:",
-      "Email: paul@appstatis.com",
-      "Ootan koostööd teiega!"
-    ]
+    "message": "<p>Tere tulemast appstatisesse! Mina olen <strong>Paul</strong>, pühendunud veebidisainer ja arendaja, kes on siin selleks, et anda teie veebivisioon elu. Sooloettevõtjana pakun isikupärastatud, üks-ühele teenust, et tagada, et teie veebisait tõeliselt peegeldab teie brändi ja vastab teie ainulaadsetele vajadustele.</p> <p>Praegu olen neljanda kursuse tarkvarainseneri üliõpilane Tallinna Polütehnikumis ja entusiastlik praktikant valdkonnas. Minu värske perspektiiv ja valmisolek uuenduslikke lahendusi omaks võtta eristavad mind. Olen pühendunud veebidisaini ja -arenduse tipptaseme saavutamisele, valmis võtma ette mis tahes väljakutse ja tooma teie projektidesse loovaid ideid.</p> <p>Rohkem teavet ning minu sotsiaalmeedia profiilide jaoks külastage minu <website>isiklikku lehte</website> või võtke minuga otse ühendust aadressil:</p> <p>Email: <email>paul@appstatis.com</email></p> <p>Ootan põnevusega koostööd teiega!</p>"
   },
   "pricing": {
     "title": "Hinnakiri",
@@ -129,7 +137,8 @@
   },
   "additionalQuestions": {
     "title": "Ei leia siit oma küsimust?",
-    "message": "Võtke julgelt ühendust"
+    "message": "Võtke julgelt ühendust",
+    "submit": "Saada"
   },
   "contact": {
     "title": "Kirjutage meile!",
@@ -139,7 +148,55 @@
       "email": "E-post",
       "company": "Ettevõte",
       "message": "Sõnum",
-      "submit": "Saada"
+      "submit": "Saada",
+      "errors": {
+        "name": "Nimi peab olema vähemalt 2 tähemärki pikk",
+        "email": "Vale e-posti aadress",
+        "message": "Sõnum peab olema vähemalt 10 tähemärki pikk"
+      }
+    }
+  },
+  "privacyPolicy": {
+    "title": "Privaatsuspoliitika",
+    "description": "Teie privaatsus on meile oluline. Appstatisi poliitika on austada teie privaatsust igasuguste andmete osas, mida me võime teie kohta koguda meie veebisaidilt ja teistelt meie omanduses olevatelt ja hallatavatelt saitidelt.",
+    "content": {
+      "section1": {
+        "title": "Kogutud Teave",
+        "description": "Küsimme isikuandmeid ainult siis, kui see on tõeliselt vajalik teenuse pakkumiseks. Me kogume andmeid ausate ja seaduslike meetoditega, teie teadlikkuse ja nõusolekuga. Anname teile teada, miks me andmeid kogume ja kuidas neid kasutatakse."
+      },
+      "section2": {
+        "title": "Teabe Kasutamine",
+        "description": "Kogutud teavet kasutatakse meie pakutavate teenuste parandamiseks, teie kasutajakogemuse kohandamiseks ja teie Appstatisi konto andmete eelnevalt täitmiseks, kui see on kohaldatav."
+      },
+      "section3": {
+        "title": "Teabe Säilitamine",
+        "description": "Kogutud teavet säilitame ainult niikaua, kui see on vajalik soovitud teenuse pakkumiseks. Salvestatud andmeid kaitseme äriliselt aktsepteeritavate meetoditega, et vältida kadumist ja vargust, samuti volitamata juurdepääsu, avaldamist, kopeerimist, kasutamist või muutmist."
+      },
+      "section4": {
+        "title": "Teabe Jagamine",
+        "description": "Me ei jaga isikuandmeid avalikult ega kolmandate isikutega, välja arvatud juhul, kui seadus nõuab seda."
+      },
+      "section5": {
+        "title": "Andmekaitse",
+        "description": "Appstatis tegutseb isikuandmete töötlejana ja vastutava töötlejana seoses meie teenuste kaudu töödeldud isikuandmetega, järgides kohaldatavaid andmekaitse seadusi, sealhulgas ELi isikuandmete kaitse üldmäärust (GDPR)."
+      },
+      "section6": {
+        "title": "Välimised Saidid",
+        "description": "Meie veebisait võib sisaldada linke välistele saitidele, mida me ei halda. Palun arvestage, et meil pole kontrolli nende saitide sisu ja praktikate üle ning me ei saa vastutada nende privaatsuspoliitikate eest."
+      },
+      "section7": {
+        "title": "Teie Õigused",
+        "description": "Teil on õigus keelduda meie palvest teie isikuandmete osas, mõistes, et me ei pruugi olla suuteline pakkuma teile mõningaid soovitud teenuseid."
+      },
+      "section8": {
+        "title": "Selle Poliitika Aktsepteerimine",
+        "description": "Teie jätkuv veebisaidi kasutamine loetakse meie privaatsuse ja isikuandmete praktikate aktsepteerimiseks."
+      },
+      "footer": {
+        "title": "Kontaktige Meid",
+        "description": "Kui teil on küsimusi nende tingimuste kohta, võtke meiega ühendust aadressil <emailLink>paul@appstatis.com</emailLink>",
+        "lastUpdated": "Viimati uuendatud: 7. märts 2023."
+      }
     }
   }
 }

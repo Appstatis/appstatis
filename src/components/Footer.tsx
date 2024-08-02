@@ -1,3 +1,5 @@
+import useTranslation from "next-translate/useTranslation";
+import Trans from "next-translate/Trans";
 import Link from "next/link";
 
 /**
@@ -9,6 +11,8 @@ import Link from "next/link";
  * @returns A footer component with links to the terms of service, privacy policy, and the app's Github repository
  */
 export const Footer = () => {
+  const { t } = useTranslation("common");
+
   return (
     <footer className="py-6">
       <div className="container mx-auto flex flex-col items-center justify-between gap-4 px-4 sm:flex-row sm:gap-0">
@@ -20,35 +24,39 @@ export const Footer = () => {
             className="text-sm font-medium text-gray-400 hover:text-gray-200"
             href="terms-of-service"
           >
-            Terms of Service
+            {t("footer.links.termsOfService")}
           </Link>
           <Link
             className="text-sm font-medium text-gray-400 hover:text-gray-200"
             href="privacy-policy"
           >
-            Privacy Policy
+            {t("footer.links.privacyPolicy")}
           </Link>
           <Link
             className="text-sm font-medium text-gray-400 hover:text-gray-200"
             href="https://github.com/appstatis/appstatis"
             target="_blank"
           >
-            Github
+            {t("footer.links.github")}
           </Link>
         </nav>
         <div className="text-center sm:text-right">
           <p className="text-sm text-gray-400">
-            © 2024 appstatis. All rights reserved.
+            {t("footer.copyright.message")}
           </p>
           <p className="text-sm text-gray-400">
-            This app is open source and licensed under the{" "}
-            <Link
-              className="underline hover:no-underline"
-              href="https://www.apache.org/licenses/LICENSE-2.0.txt"
-              target="_blank"
-            >
-              Apache License 2.0
-            </Link>
+            <Trans
+              i18nKey="common:footer.copyright.license"
+              components={{
+                licenseLink: (
+                  <Link
+                    className="underline hover:no-underline"
+                    href="https://www.apache.org/licenses/LICENSE-2.0.txt"
+                    target="_blank"
+                  />
+                ),
+              }}
+            />
           </p>
         </div>
       </div>

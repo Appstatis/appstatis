@@ -1,5 +1,6 @@
 "use client";
 
+import Trans from "next-translate/Trans";
 import useTranslation from "next-translate/useTranslation";
 import { useEffect } from "react";
 import anime from "animejs";
@@ -38,15 +39,19 @@ export const CTA = () => {
   return (
     <div className="space-y-5 cta opacity-0">
       <p className="message">
-        At <span className="text-xl font-bold">appstatis</span>, we believe in
-        the power of transformation through technology. Our mission is to help
-        you unleash your most ambitious ideas and turn them into reality.
+        <Trans
+          i18nKey="common:hero.description"
+          components={{
+            bold: <span className="text-xl font-bold" />,
+          }}
+          values={{ appName: "appstatis" }}
+        />
       </p>
       <button
         onClick={() => handleSmoothScroll(pricing)}
         className="font-bold text-black bg-white py-2 px-4 rounded-xl border-4 border-white transition duration-500 hover:text-white hover:bg-gray-900"
       >
-        {t("getStarted")}
+        {t("hero.getStarted")}
       </button>
     </div>
   );

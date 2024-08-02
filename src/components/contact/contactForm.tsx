@@ -3,6 +3,7 @@
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
+import useTranslation from "next-translate/useTranslation";
 
 import { Button } from "@/components/ui/button";
 import {
@@ -16,19 +17,6 @@ import {
 import { Input } from "@/components/ui/input";
 import { Textarea } from "../ui/textarea";
 
-const formSchema = z.object({
-  name: z.string().min(2, {
-    message: "Name must be at least 2 characters long",
-  }),
-  email: z.string().email({
-    message: "Invalid email address",
-  }),
-  company: z.string(),
-  message: z.string().min(10, {
-    message: "Message must be at least 10 characters long",
-  }),
-});
-
 /**
  * ContactForm component that supports form validation provided by react-hook-form and zod.
  * This component is integrated with Formspark API to handle form submission.
@@ -37,6 +25,21 @@ const formSchema = z.object({
  * @returns A contact form component
  */
 export const ContactForm = () => {
+  const { t } = useTranslation("common");
+
+  const formSchema = z.object({
+    name: z.string().min(2, {
+      message: t("contact.form.errors.name"),
+    }),
+    email: z.string().email({
+      message: t("contact.form.errors.email"),
+    }),
+    company: z.string(),
+    message: z.string().min(10, {
+      message: t("contact.form.errors.message"),
+    }),
+  });
+
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -82,7 +85,7 @@ export const ContactForm = () => {
           name="name"
           render={({ field }) => (
             <FormItem>
-              <FormLabel>Username</FormLabel>
+              <FormLabel>{t("contact.form.username")}</FormLabel>
               <FormControl>
                 <Input {...field} />
               </FormControl>
@@ -95,7 +98,7 @@ export const ContactForm = () => {
           name="email"
           render={({ field }) => (
             <FormItem>
-              <FormLabel>Email</FormLabel>
+              <FormLabel>{t("contact.form.email")}</FormLabel>
               <FormControl>
                 <Input {...field} />
               </FormControl>
@@ -108,7 +111,7 @@ export const ContactForm = () => {
           name="company"
           render={({ field }) => (
             <FormItem>
-              <FormLabel>Company</FormLabel>
+              <FormLabel>{t("contact.form.company")}</FormLabel>
               <FormControl>
                 <Input {...field} />
               </FormControl>
@@ -121,7 +124,7 @@ export const ContactForm = () => {
           name="message"
           render={({ field }) => (
             <FormItem>
-              <FormLabel>Message</FormLabel>
+              <FormLabel>{t("contact.form.message")}</FormLabel>
               <FormControl>
                 <Textarea {...field} />
               </FormControl>
@@ -130,7 +133,7 @@ export const ContactForm = () => {
           )}
         />
         <Button className="w-full" type="submit">
-          Submit
+          {t("contact.form.submit")}
         </Button>
       </form>
     </Form>

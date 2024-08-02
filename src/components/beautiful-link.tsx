@@ -5,7 +5,7 @@ export const BeautifulLink = ({
   children,
 }: {
   href: string;
-  children: React.ReactNode;
+  children?: React.ReactNode;
 }) => {
   return (
     <Link

@@ -1,22 +1,24 @@
 "use client";
 
+import useTranslation from "next-translate/useTranslation";
 import { useContext } from "react";
 import ScrollContext from "@/context/scrollContext";
 import { handleSmoothScroll } from "@/utils/handleSmoothScroll";
 
 const NavControls = () => {
+  const { t } = useTranslation("common");
   const { about, services, pricing, faq, contact } = useContext(ScrollContext);
 
   const navLinks = [
-    { name: "Services", href: services },
-    { name: "About", href: about },
-    { name: "Pricing", href: pricing },
-    { name: "FAQ", href: faq },
-    { name: "Contact", href: contact },
+    { name: "services", href: services },
+    { name: "about", href: about },
+    { name: "pricing", href: pricing },
+    { name: "faq", href: faq },
+    { name: "contact", href: contact },
   ];
 
   return (
-    <nav>
+    <nav className="hidden md:block">
       <article className="items-center flex gap-3 md:gap-6 text-sm font-medium">
         {navLinks.map((link) => (
           <button
@@ -24,7 +26,7 @@ const NavControls = () => {
             onClick={(event) => handleSmoothScroll(link.href, event)}
             className="relative after:block after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full after:scale-x-0 after:bg-white after:transition-transform after:duration-300 hover:after:scale-x-100"
           >
-            {link.name}
+            {t(`navbar.${link.name}`)}
           </button>
         ))}
       </article>

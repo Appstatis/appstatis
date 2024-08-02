@@ -1,5 +1,6 @@
 "use client";
 
+import useTranslation from "next-translate/useTranslation";
 import { useContext } from "react";
 import ScrollContext from "@/context/scrollContext";
 import { Header } from "../header";
@@ -11,6 +12,7 @@ import { ContactForm } from "./contactForm";
  * @returns A contact section component with a contact form
  */
 export const Contact = () => {
+  const { t } = useTranslation("common");
   const { contact } = useContext(ScrollContext);
 
   return (
@@ -18,10 +20,7 @@ export const Contact = () => {
       ref={contact}
       className="flex flex-col min-h-[75vh] mt-52 items-center w-full"
     >
-      <Header
-        title="Text us instead!"
-        description="In case you don't have much time for calls or just hate them"
-      />
+      <Header title={t("contact.title")} description={t("contact.message")} />
       <ContactForm />
     </section>
   );

@@ -1,3 +1,245 @@
 {
-  "getStarted": "Get Started"
+  "common": {
+    "buttonBack": "Back"
+  },
+  "navbar": {
+    "services": "Services",
+    "about": "About",
+    "pricing": "Pricing",
+    "faq": "FAQ",
+    "contact": "Contact"
+  },
+  "footer": {
+    "links": {
+      "termsOfService": "Terms of Service",
+      "privacyPolicy": "Privacy Policy",
+      "github": "Github"
+    },
+    "copyright": {
+      "message": "© 2024 appstatis. All rights reserved.",
+      "license": "This app is open source and licensed under the <licenseLink>Apache License 2.0</licenseLink>"
+    }
+  },
+  "hero": {
+    "title": "Unleash ideas Embrace Innovation",
+    "description": "At <bold>{{appName}}</bold>, we believe in the power of transformation through technology. Our mission is to help you unleash your most ambitious ideas and turn them into reality.",
+    "getStarted": "Get Started"
+  },
+  "services": {
+    "title": "Services",
+    "description": "We offer a wide range of services to help you achieve your goals. From website design to web development, we have the expertise to deliver your vision to life.",
+    "options": [
+      {
+        "title": "Website Design",
+        "description": "Creating visually stunning, user-centric web designs that ensure a seamless user experience across all devices."
+      },
+      {
+        "title": "Web Development",
+        "description": "Leveraging leading technologies to build fast, responsive websites that enhance user engagement and improve conversion rates."
+      },
+      {
+        "title": "Website Maintenance",
+        "description": "Providing comprehensive maintenance services including performance optimization, security updates, and timely enhancements to keep your site running smoothly."
+      }
+    ]
+  },
+  "features": {
+    "title": "What we promise you",
+    "description": "Expert web development services that are available around the clock, ensuring personalized and technology-driven solutions to meet your project needs, allowing you to focus on your core business while we handle your web development requirements.",
+    "options": [
+      {
+        "title": "Transparent Processes",
+        "description": "We promise full transparency in all our dealings, giving you insight into every stage of our process."
+      },
+      {
+        "title": "Flexible Communication",
+        "description": "We prioritize efficient, meeting-free interactions, but are ready to meet when needed."
+      },
+      {
+        "title": "Tailored Solutions",
+        "description": "Understanding your needs is our top priority. We promise personalized solutions that are tailored to meet your unique challenges and objectives."
+      },
+      {
+        "title": "Innovation and Excellence",
+        "description": "We utilize modern, sleek, and optimized technologies to build superior web applications that offer the best performance in the market."
+      },
+      {
+        "title": "Unlimited Requests",
+        "description": "We offer unlimited support—no matter how many requests you have, we're here to make each one happen."
+      },
+      {
+        "title": "Support and Aftercare",
+        "description": "We promise ongoing support and aftercare, ensuring that you continue to benefit from our services long after the initial purchase."
+      }
+    ]
+  },
+  "about": {
+    "title": "What is appstatis?",
+    "message": "<p>Welcome to appstatis! I'm <strong>Paul</strong>, a dedicated web designer and developer here to bring your online vision to life. As a solo entrepreneur, I offer personalized, one-on-one service to ensure your website truly reflects your brand and meets your unique needs.</p> <p>Currently, I'm a fourth-grade software engineering student at Tallinna Polütehnikum and an enthusiastic intern in the field. My fresh perspective and eagerness to embrace innovative solutions set me apart. I'm committed to staying on the cutting edge of web design and development, ready to tackle any challenge and bring creative ideas to your projects.</p> <p>For more information as well as my social media profiles, visit my <website>personal page</website> or contact me directly at:</p> <p>Email: <email>paul@appstatis.com</email></p> <p>Looking forward to working with you!</p>"
+  },
+  "pricing": {
+    "title": "Pricing",
+    "description": "Our pricing is designed to be simple and transparent. We offer a variety of pricing options to suit your needs.",
+    "options": [
+      {
+        "title": "One Time",
+        "description": "Tailored for quick resolutions without ongoing obligations.",
+        "price": "$600",
+        "features": [
+          "5 pages.",
+          "All-inclusive technical support.",
+          "Post-launch support at $20/hr.",
+          "Excludes third-party expenses."
+        ]
+      },
+      {
+        "title": "Periodic",
+        "description": "Ideal for small businesses and startups.",
+        "price": "$150",
+        "features": [
+          "5 pages.",
+          "Comprehensive technical support.",
+          "Continuous maintenance and proactive support.",
+          "Bug fixes and performance enhancements.",
+          "Note: Additional charges for third-party services may apply."
+        ]
+      },
+      {
+        "title": "Custom",
+        "description": "Have a unique project in mind? Let's discuss your requirements and come up with a custom plan that suits your needs."
+      }
+    ]
+  },
+  "faq": {
+    "title": "Answers to some questions that might pop up in your mind",
+    "questions": [
+      {
+        "title": "How is communication handled during the project?",
+        "answer": "We manage our projects using Basecamp, a robust project management tool where you can add tasks, track progress, and communicate directly with us. If you prefer alternative communication methods, we are flexible and can also coordinate via email, phone, or any other channel that suits your convenience."
+      },
+      {
+        "title": "How do you handle payment?",
+        "answer": "We offer a convenient auto-renewable subscription model for our fixed services, managed through Stripe to ensure secure and hassle-free payments. For specific projects or additional services outside the regular subscription, we will issue an invoice directly to you. This allows us to tailor our billing to your specific needs and service usage."
+      },
+      {
+        "title": "How do I cancel my subscription?",
+        "answer": "To cancel your subscription, simply contact us directly via email or phone, and we will guide you through the process. Please note that your subscription will remain active until the end of the current billing period, allowing you to continue accessing our services until then."
+      },
+      {
+        "title": "What support do you offer post-launch?",
+        "answer": "Post-launch, we offer comprehensive support to ensure your website continues to run smoothly. This includes technical support, bug fixes, performance optimizations, and content updates, tailored to keep your site up-to-date and performing optimally."
+      },
+      {
+        "title": "What if I need changes or updates during the project?",
+        "answer": "We understand that project requirements can evolve. If you need any changes or updates, please communicate them through Basecamp or your preferred communication method. We are committed to accommodating your needs and ensuring the project aligns with your vision."
+      }
+    ]
+  },
+  "additionalQuestions": {
+    "title": "Don't see your question here?",
+    "message": "Feel free to reach out to us",
+    "submit": "Submit"
+  },
+  "contact": {
+    "title": "Text us instead!",
+    "message": "In case you don't have much time for calls or just hate them",
+    "form": {
+      "username": "Username",
+      "email": "Email",
+      "company": "Company",
+      "message": "Message",
+      "submit": "Submit",
+      "errors": {
+        "name": "Name must be at least 2 characters long",
+        "email": "Invalid email address",
+        "message": "Message must be at least 10 characters long"
+      }
+    }
+  },
+  "termsOfService": {
+    "title": "Terms of Service",
+    "description": "Welcome to Appstatis! These terms and conditions outline the rules and regulations for the use of Appstatis's Website, located at www.appstatis.com.",
+    "content": {
+      "section1": {
+        "title": "Acceptance of Terms",
+        "description": "By accessing this website we assume you accept these terms and conditions. Do not continue to use Appstatis if you do not agree to take all of the terms and conditions stated on this page."
+      },
+      "section2": {
+        "title": "Payments",
+        "description": "Appstatis offers services under both a one-time payment and a subscription-based model. Details about the scope of services, as well as any fees associated with these services, will be provided on our website or through a direct communication with you."
+      },
+      "section3": {
+        "title": "Subscription Terms",
+        "description": "For subscription-based services, you will be billed in advance on a recurring and periodic basis. Your subscription will automatically renew under the exact same conditions unless you cancel it or Appstatis cancels it. A valid payment method, including credit card, is required to process the payment for your subscription."
+      },
+      "section4": {
+        "title": "Refunds",
+        "description": "Refunds for services by Appstatis are only available under specific circumstances. A non-refundable deposit is required at the start of any project to cover initial resources and labor costs. Should you choose to discontinue the project part-way, a refund may be considered on a pro-rata basis, based on the completion status of the project. All requests for refunds must be made formally in writing within 7 days of the last submitted milestone. We reserve the right to first attempt to rectify any issues before issuing a refund."
+      },
+      "section5": {
+        "title": "Cancellation",
+        "description": "You may cancel your subscription at any time. Please note that there will be no refunds for the fees already paid, except as may be required by applicable law."
+      },
+      "section6": {
+        "title": "Modifications to Service and Prices",
+        "description": "Prices for our services are subject to change without notice. We reserve the right at any time to modify or discontinue the Service (or any part or content thereof) without notice at any time."
+      },
+      "section7": {
+        "title": "Governing Law",
+        "description": "These Terms shall be governed by and construed in accordance with the laws of the Republic of Estonia, without regard to its conflict of law provisions. Our failure to enforce any right or provision of these Terms will not be considered a waiver of those rights. If any provision of these Terms is held to be invalid or unenforceable by a court, the remaining provisions of these Terms will remain in effect. These Terms constitute the entire agreement between us regarding our Service, and supersede and replace any prior agreements we might have had between us regarding the Service."
+      },
+      "section8": {
+        "title": "Changes to Terms",
+        "description": "We reserve the right, at our sole discretion, to modify or replace these Terms at any time. If a revision is material we will provide at least 30 days' notice prior to any new terms taking effect. What constitutes a material change will be determined at our sole discretion."
+      },
+      "footer": {
+        "title": "Contact Us",
+        "description": "If you have any questions about these Terms, please contact us at <emailLink>paul@appstatis.com</emailLink>",
+        "lastUpdated": "Last updated: 7 March 2023."
+      }
+    }
+  },
+  "privacyPolicy": {
+    "title": "Privacy Policy",
+    "description": "Your privacy is important to us. It is Appstatis's policy to respect your privacy regarding any information we may collect from you across our website, and other sites we own and operate.",
+    "content": {
+      "section1": {
+        "title": "Information We Collect",
+        "description": "We only ask for personal information when we truly need it to provide a service to you. We collect it by fair and lawful means, with your knowledge and consent. We also let you know why we're collecting it and how it will be used."
+      },
+      "section2": {
+        "title": "Use of Information",
+        "description": "The information we collect is used to enhance the services we offer, to personalize your user experience, and to prefill your Appstatis account details where applicable."
+      },
+      "section3": {
+        "title": "Retention of Information",
+        "description": "We only retain collected information for as long as necessary to provide you with your requested service. What data we store, we'll protect within commercially acceptable means to prevent loss and theft, as well as unauthorized access, disclosure, copying, use, or modification."
+      },
+      "section4": {
+        "title": "Sharing of Information",
+        "description": "We don't share any personally identifying information publicly or with third-parties, except when required to by law."
+      },
+      "section5": {
+        "title": "Data Protection",
+        "description": "Appstatis acts in the capacity of both a data controller and a data processor with regard to the personal data processed through our services in terms of the applicable data protection laws, including the EU General Data Protection Regulation (GDPR)."
+      },
+      "section6": {
+        "title": "External Sites",
+        "description": "Our website may link to external sites that are not operated by us. Please be aware that we have no control over the content and practices of these sites and cannot accept responsibility or liability for their respective privacy policies."
+      },
+      "section7": {
+        "title": "Your Rights",
+        "description": "You are free to refuse our request for your personal information, with the understanding that we may be unable to provide you with some of your desired services."
+      },
+      "section8": {
+        "title": "Acceptance of This Policy",
+        "description": "Your continued use of our website will be regarded as acceptance of our practices around privacy and personal information."
+      },
+      "footer": {
+        "title": "Contact Us",
+        "description": "If you have any questions about these Terms, please contact us at <emailLink>paul@appstatis.com</emailLink>",
+        "lastUpdated": "Last updated: 7 March 2023."
+      }
+    }
+  }
 }

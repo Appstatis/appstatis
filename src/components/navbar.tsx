@@ -4,6 +4,19 @@ import useTranslation from "next-translate/useTranslation";
 import { useContext } from "react";
 import ScrollContext from "@/context/scrollContext";
 import { handleSmoothScroll } from "@/utils/handleSmoothScroll";
+import { useLang } from "@/hooks/useLang";
+import { LinkWithLang } from "@/components/link-with-lang";
+import { Button } from "./ui/button";
+
+function ChangeLanguage() {
+  const { langToSwitch } = useLang();
+
+  return (
+    <Button variant="ghost">
+      <LinkWithLang href="/">{langToSwitch}</LinkWithLang>
+    </Button>
+  );
+}
 
 const NavControls = () => {
   const { t } = useTranslation("common");
@@ -18,8 +31,11 @@ const NavControls = () => {
   ];
 
   return (
-    <nav className="hidden md:block">
-      <article className="items-center flex gap-3 md:gap-6 text-sm font-medium">
+    <nav className="flex h-16 w-full items-center justify-between px-4 md:px-6">
+      <span className="font-black text-xl flex items-center gap-2">
+        <span>as.</span>
+      </span>
+      <section className="hidden md:flex items-center gap-3 md:gap-6 text-sm font-medium">
         {navLinks.map((link) => (
           <button
             key={link.name}
@@ -29,7 +45,10 @@ const NavControls = () => {
             {t(`navbar.${link.name}`)}
           </button>
         ))}
-      </article>
+      </section>
+      <section>
+        <ChangeLanguage />
+      </section>
     </nav>
   );
 };
@@ -37,10 +56,6 @@ const NavControls = () => {
 export const Navbar = () => {
   return (
     <header className="mx-auto max-w-7xl flex h-16 w-full items-center justify-between px-4 md:px-6">
-      <span className="font-black text-xl flex items-center gap-2">
-        <span>as.</span>
-      </span>
-
       <NavControls />
     </header>
   );

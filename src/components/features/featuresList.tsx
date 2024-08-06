@@ -1,3 +1,4 @@
+import useTranslation from "next-translate/useTranslation";
 import { Header } from "../header";
 import { Feature } from "./feature";
 import { Feature as TFeature } from "@/types/Feature";
@@ -15,6 +16,7 @@ export const FeaturesList = ({
     throw new Error("Features list must have a length that is a multiple of 3");
   }
 
+  const { t } = useTranslation("common");
   const { ref } = useAnimateInView(".features", {
     opacity: [0, 1],
     duration: 3000,
@@ -24,8 +26,8 @@ export const FeaturesList = ({
     <>
       <div className="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
         <Header
-          title="What we promise you"
-          description="Expert web development services that are available around the clock, ensuring personalized and technology-driven solutions to meet your project needs, allowing you to focus on your core business while we handle your web development requirements."
+          title={t("features.title")}
+          description={t("features.description")}
         />
 
         <div

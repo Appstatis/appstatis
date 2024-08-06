@@ -1,5 +1,6 @@
 "use client";
 
+import useTranslation from "next-translate/useTranslation";
 import { useContext } from "react";
 import ScrollContext from "@/context/scrollContext";
 import { FAQItems } from "./faqItems";
@@ -13,11 +14,12 @@ import { Header } from "../header";
  * @returns A react element that represents a section with FAQ items
  */
 export const FAQ = () => {
+  const { t } = useTranslation("common");
   const { faq } = useContext(ScrollContext);
 
   return (
     <section ref={faq} className="grid justify-center">
-      <Header title="Answers to some questions that might pop up in your mind" />
+      <Header title={t("faq.title")} />
       <FAQItems faq={FAQData} />
     </section>
   );

@@ -1,6 +1,8 @@
 {
   "common": {
-    "buttonBack": "Tagasi"
+    "buttonBack": "Tagasi",
+    "buttonGetStarted": "Alusta",
+    "buttonBookCall": "Võta ühendus"
   },
   "navbar": {
     "services": "Teenused",
@@ -11,190 +13,244 @@
   },
   "footer": {
     "links": {
-      "termsOfService": "Kasutustingimused",
+      "termsOfService": "Teenuse tingimused",
       "privacyPolicy": "Privaatsuspoliitika",
       "github": "Github"
     },
     "copyright": {
       "message": "© 2024 appstatis. Kõik õigused kaitstud.",
-      "license": "See rakendus on avatud lähtekoodiga ja litsentseeritud <licenseLink>Apache License 2.0</licenseLink> alusel"
+      "license": "See rakendus on avatud lähtekoodiga ja litsentseeritud <licenseLink>Apache License 2.0</licenseLink> alusel."
     }
   },
   "hero": {
-    "title": "Vabasta ideed, omaks innovatsiooni",
-    "description": "<bold>appstatis </bold> usume tehnoloogia jõusse muuta maailma. Meie missiooniks on aidata teil vabastada oma ambitsioonikaimad ideed ja muuta need reaalsuseks.",
-    "getStarted": "Alusta"
+    "title": "Vabasta ideed. Tervita innovatsiooni",
+    "description": "Meie <bold>{{appName}}</bold> juures usume tehnoloogia kaudu toimuva transformatsiooni jõusse. Meie missioon on aidata sul vabastada oma kõige ambitsioonikamad ideed ja muuta need reaalsuseks."
   },
   "services": {
     "title": "Teenused",
-    "description": "Pakume laias valikus teenuseid, et aidata teil oma eesmärke saavutada. Alates veebidisainist kuni veebiarenduseni - meil on oskused ja teadmised, et teie visioon ellu viia.",
+    "description": "Pakume laia valikut teenuseid, et aidata sul saavutada oma eesmärke. Alates veebilehe kujundamisest kuni veebiarenduse ja -hoolduseni, meil on oskused, et sinu nägemus ellu viia.",
     "options": [
       {
-        "title": "Veebidisain",
-        "description": "Loomine visuaalselt vapustavad, kasutajakesksed veebidisainid, mis tagavad sujuva kasutuskogemuse kõigis seadmetes."
+        "id": "website-design",
+        "title": "Veebilehe Kujundamine",
+        "description": "Loomine visuaalselt muljetavaldavaid, kasutajakeskseid veebikujundusi, mis tagavad sujuva kasutajakogemuse kõigil seadmetel."
       },
       {
-        "title": "Veebiarendus",
-        "description": "Juhtivate tehnoloogiate kasutamine kiirete ja reageerivate veebisaitide ehitamiseks, mis suurendavad kasutajate kaasatust ja parandavad konversioonimäärasid."
+        "id": "website-development",
+        "title": "Veebilehe Arendamine",
+        "description": "Kasutades juhtivaid tehnoloogiaid, loome kiireid ja reageerivaid veebilehti, mis suurendavad kasutajate kaasatust ja parandavad konversioonimäärasid."
       },
       {
-        "title": "Veebisaidi hooldus",
-        "description": "Pakkumine põhjalikke hooldusteenuseid, sealhulgas jõudluse optimeerimine, turvauuendused ja õigeaegsed täiustused, et hoida teie sait sujuvalt töötamas."
+        "id": "website-maintenance",
+        "title": "Veebilehe Hooldus",
+        "description": "Pakume ulatuslikke hooldusteenuseid, sealhulgas jõudluse optimeerimist, turvauuendusi ja õigeaegseid täiustusi, et sinu veebileht toimiks sujuvalt."
       }
     ]
   },
   "features": {
-    "title": "Mida me teile lubame",
-    "description": "Asjatundlikud veebiarendusteenused, mis on saadaval ööpäevaringselt, pakkudes isikupärastatud ja tehnoloogiapõhiseid lahendusi teie projekti vajadustele vastamiseks, võimaldades teil keskenduda oma põhiärile, samal ajal kui me tegeleme teie veebiarendusvajadustega.",
+    "title": "Mida me sulle lubame",
+    "description": "Eksperthariduse veebiarenduse teenused, mis on saadaval ööpäevaringselt, tagades personaalsed ja tehnoloogiapõhised lahendused, et rahuldada sinu projekti vajadusi, võimaldades sul keskenduda oma põhitegevusele, samal ajal kui meie hoolitseme sinu veebiarenduse vajaduste eest.",
     "options": [
       {
-        "title": "Läbipaistvad protsessid",
-        "description": "Lubame täielikku läbipaistvust kõigis meie tegevustes, andes teile ülevaate iga meie protsessi etapist."
+        "id": "transparent-processes",
+        "title": "Läbipaistvad Protsessid",
+        "description": "Lubame täielikku läbipaistvust kõikides meie tehingutes, andes sulle ülevaate iga meie protsessi etapist."
       },
       {
-        "title": "Paindlik suhtlemine",
-        "description": "Eelistame tõhusat, kohtumistevaba suhtlust, kuid oleme valmis kohtuma, kui vaja."
+        "id": "flexible-communication",
+        "title": "Paindlik Kommunikatsioon",
+        "description": "Eelistame tõhusaid, kohtumistevabasid suhtlusviise, kuid oleme valmis kohtuma, kui see on vajalik."
       },
       {
-        "title": "Kohandatud lahendused",
-        "description": "Teie vajaduste mõistmine on meie prioriteet. Lubame isikupärastatud lahendusi, mis on kohandatud teie unikaalsetele väljakutsetele ja eesmärkidele."
+        "id": "tailored-solutions",
+        "title": "Kohandatud Lahendused",
+        "description": "Sinu vajaduste mõistmine on meie peamine prioriteet. Lubame personaalseid lahendusi, mis on kohandatud sinu ainulaadsete väljakutsete ja eesmärkide saavutamiseks."
       },
       {
-        "title": "Innovatsioon ja tipptase",
-        "description": "Kasutame kaasaegseid, stiilseid ja optimeeritud tehnoloogiaid, et ehitada tipptasemel veebirakendusi, mis pakuvad turu parimat jõudlust."
+        "id": "innovation-and-excellence",
+        "title": "Innovatsioon ja Täiuslikkus",
+        "description": "Kasutame kaasaegseid, stiilseid ja optimeeritud tehnoloogiaid, et luua paremaid veebirakendusi, mis pakuvad turu parimat jõudlust."
       },
       {
-        "title": "Piiramatud taotlused",
-        "description": "Pakume piiramatut tuge - ükskõik kui palju taotlusi teil on, oleme siin, et kõik need ellu viia."
+        "id": "unlimited-requests",
+        "title": "Piiramatu Tugi",
+        "description": "Pakume piiramatut tuge – olenemata sellest, kui palju päringuid sul on, oleme siin, et igaühe teoks teha."
       },
       {
-        "title": "Tugi ja järelhooldus",
-        "description": "Lubame jätkuvat tuge ja järelhooldust, tagades, et saate meie teenustest kasu ka pärast esmast ostu."
+        "id": "support-and-aftercare",
+        "title": "Tugi ja Järelhooldus",
+        "description": "Lubame pidevat tuge ja järelhooldust, tagades, et saad meie teenustest kasu veel kaua pärast esmast ostu."
       }
     ]
   },
   "about": {
     "title": "Mis on appstatis?",
-    "message": "<p>Tere tulemast appstatisesse! Mina olen <strong>Paul</strong>, pühendunud veebidisainer ja arendaja, kes on siin selleks, et anda teie veebivisioon elu. Sooloettevõtjana pakun isikupärastatud, üks-ühele teenust, et tagada, et teie veebisait tõeliselt peegeldab teie brändi ja vastab teie ainulaadsetele vajadustele.</p> <p>Praegu olen neljanda kursuse tarkvarainseneri üliõpilane Tallinna Polütehnikumis ja entusiastlik praktikant valdkonnas. Minu värske perspektiiv ja valmisolek uuenduslikke lahendusi omaks võtta eristavad mind. Olen pühendunud veebidisaini ja -arenduse tipptaseme saavutamisele, valmis võtma ette mis tahes väljakutse ja tooma teie projektidesse loovaid ideid.</p> <p>Rohkem teavet ning minu sotsiaalmeedia profiilide jaoks külastage minu <website>isiklikku lehte</website> või võtke minuga otse ühendust aadressil:</p> <p>Email: <email>paul@appstatis.com</email></p> <p>Ootan põnevusega koostööd teiega!</p>"
+    "message": "<p>Tere tulemast appstatisesse! Mina olen <strong>Pavel Bogatõr</strong> (võid kutsuda mind Pauliks), pühendunud veebidisainer ja arendaja, kes on siin, et ellu viia sinu veebinägemus. Üksikettevõtjana pakun isikupärastatud teenust, et tagada sinu veebileht tõeliselt peegeldab sinu brändi ja vastab sinu ainulaadsetele vajadustele.</p> <p>Käesoleval hetkel olen neljanda kursuse tarkvarainseneri üliõpilane Tallinna Polütehnikumis ja entusiastlik praktikant valdkonnas. Minu värske vaatenurk ja valmidus innovatiivsete lahenduste omaksvõtmiseks eristavad mind. Olen pühendunud veebidisaini ja -arenduse tipptasemel hoidmisele, valmis võtma ette igasuguseid väljakutseid ja tooma loovaid ideid sinu projektidesse.</p> <p>Lisainformatsiooni ja minu sotsiaalmeedia profiilide kohta leiad minu <website>isiklikult lehelt</website> või võta minuga otse ühendust aadressil:</p> <p>Email: <email>paul@appstatis.com</email></p> <p>Ootan põnevusega koostööd sinuga!</p>"
   },
   "pricing": {
     "title": "Hinnakiri",
-    "description": "Meie hinnakiri on kujundatud lihtsaks ja läbipaistvaks. Pakume erinevaid hinnakujunduse valikuid, mis vastavad teie vajadustele.",
+    "description": "Meie hinnakiri on lihtne ja läbipaistev. Pakume erinevaid hinnakujundusvõimalusi, et sobida sinu vajadustega.",
     "options": [
       {
-        "title": "Ühekordne",
-        "description": "Kohandatud kiirete lahenduste jaoks ilma jätkuva kohustuseta.",
-        "price": "600 €",
+        "type": "one-time",
+        "title": "Korraga",
+        "description": "Kohandatud kiirete lahenduste jaoks ilma jätkusuutlike kohustusteta.",
+        "cost": "600",
         "features": [
           "5 lehte.",
-          "Kõikehõlmav tehniline tugi.",
-          "Järgneva toe tugi 20 €/t.",
-          "Ei sisalda kolmandate osapoolte kulusid."
+          "Kõik-ühes tehniline tugi.",
+          "Tugi pärast lansseerimist $20/tunnis.",
+          "Kolmandate osapoolte kuludest välja arvatud."
         ]
       },
       {
+        "type": "periodic",
         "title": "Perioodiline",
-        "description": "Ideaalne väikestele ettevõtetele ja alustavatele ettevõtetele.",
-        "price": "150 €",
+        "description": "Ideaalsed väikeettevõtetele ja alustavatele ettevõtetele.",
+        "cost": "150",
         "features": [
           "5 lehte.",
-          "Põhjalik tehniline tugi.",
+          "Kohandatud tehniline tugi.",
           "Pidev hooldus ja proaktiivne tugi.",
-          "Vigade parandused ja jõudluse täiustused.",
-          "Märkus: Kolmandate osapoolte teenuste eest võivad kehtida lisatasud."
+          "Vigu parandamine ja jõudluse täiustamine.",
+          "Märkus: Kolmandate osapoolte teenuste eest võivad lisanduda täiendavad kulud."
         ]
       },
       {
         "title": "Kohandatud",
-        "description": "Kas teil on mõni ainulaadne projekt mõttes? Räägime teie nõuetest ja leiame kohandatud plaani, mis vastab teie vajadustele."
+        "description": "Kas sul on unikaalne projekt mõttes? Arutame sinu nõudeid ja töötame välja kohandatud plaani, mis sobib sinu vajadustega."
       }
     ]
   },
   "faq": {
-    "title": "Vastused mõnedele küsimustele, mis võivad teile pähe tulla",
+    "title": "Vastused mõnedele küsimustele, mis võivad tekkida",
     "questions": [
       {
-        "title": "Kuidas suhtlemine projekti käigus toimub?",
-        "answer": "Me haldame oma projekte Basecampi, tugeva projektihaldustööriista abil, kus saate lisada ülesandeid, jälgida edusamme ja suhelda otse meiega. Kui eelistate alternatiivseid suhtlusmeetodeid, oleme paindlikud ja saame koordineerida ka e-posti, telefoni või mis tahes muu kanaliga, mis teile sobib."
+        "question": "Kuidas käib kommunikatsioon projekti ajal?",
+        "answer": "Kasutame projekte haldamiseks Basecampi, mis on tugev projektihalduse tööriist, kus saad ülesandeid lisada, edusamme jälgida ja meiega otse suhelda. Kui eelistad muid suhtlusviise, oleme paindlikud ja saame suhelda ka e-posti, telefoni või mõne muu kanali kaudu, mis sulle sobib."
       },
       {
-        "title": "Kuidas toimub maksmine?",
-        "answer": "Pakume mugavat automaatselt uuenevat tellimusmudelit meie fikseeritud teenuste jaoks, mida haldab Stripe, tagades turvalised ja hõlpsad maksed. Konkreetsed projektid või täiendavad teenused väljaspool tavalist tellimust esitame arve otse teile. See võimaldab meil kohandada oma arveldust vastavalt teie konkreetsetele vajadustele ja teenuste kasutusele."
+        "question": "Kuidas toimub maksmine?",
+        "answer": "Pakume mugavat automaatselt uuenevat tellimusmudelit meie fikseeritud teenuste jaoks, hallatud Stripe'i kaudu, et tagada turvalised ja murevabad maksed. Konkreetsete projektide või täiendavate teenuste jaoks, mis jäävad regulaarse tellimuse välisse, väljastame otse sulle arve. See võimaldab meil kohandada arveldust sinu konkreetsete vajaduste ja teenuse kasutamise järgi."
       },
       {
-        "title": "Kuidas oma tellimus tühistada?",
-        "answer": "Oma tellimuse tühistamiseks võtke lihtsalt meiega otse ühendust e-posti või telefoni teel ja me juhendame teid protsessis. Pange tähele, et teie tellimus jääb aktiivseks kuni jooksva arveldusperioodi lõpuni, võimaldades teil jätkata meie teenuste kasutamist seni."
+        "question": "Kuidas ma saan oma tellimuse tühistada?",
+        "answer": "Tellimuse tühistamiseks võta meiega otse ühendust e-posti või telefoni teel, ja me juhatame sind läbi protsessi. Palun pane tähele, et sinu tellimus jääb kehtima kuni praeguse arveldusperioodi lõpuni, võimaldades sul meie teenuseid edasi kasutada kuni selle ajani."
       },
       {
-        "title": "Millist tuge pakute pärast veebisaidi käivitamist?",
-        "answer": "Pärast veebisaidi käivitamist pakume põhjalikku tuge, et tagada teie veebisaidi sujuv töö. See hõlmab tehnilist tuge, vigade parandamist, jõudluse optimeerimist ja sisuuuendusi, et hoida teie sait ajakohasena ja optimaalsete tulemustega."
+        "question": "Millist tuge pakute pärast lansseerimist?",
+        "answer": "Pärast lansseerimist pakume ulatuslikku tuge, et tagada sinu veebilehe sujuv toimimine. See hõlmab tehnilist tuge, vigade parandamist, jõudluse optimeerimist ja sisu uuendamist, et sinu leht oleks ajakohane ja toimiks optimaalselt."
       },
       {
-        "title": "Mis siis, kui mul on vaja projekti käigus muudatusi või uuendusi?",
-        "answer": "Mõistame, et projekti nõuded võivad muutuda. Kui vajate muudatusi või uuendusi, edastage need Basecampi või teie eelistatud suhtluskanali kaudu. Oleme pühendunud teie vajaduste rahuldamisele ja tagame, et projekt vastab teie visioonile."
+        "question": "Kuidas kui vajan projekti ajal muudatusi või uuendusi?",
+        "answer": "Mõistame, et projekti nõuded võivad muutuda. Kui vajad muudatusi või uuendusi, palun edasta need Basecampi või oma eelistatud suhtlusmeetodi kaudu. Oleme pühendunud sinu vajaduste rahuldamisele ja tagame, et projekt vastab sinu visioonile."
       }
     ]
   },
   "additionalQuestions": {
-    "title": "Ei leia siit oma küsimust?",
-    "message": "Võtke julgelt ühendust",
-    "submit": "Saada"
+    "title": "Ei leidnud siit oma küsimust?",
+    "message": "Võta meiega julgelt ühendust",
+    "submit": "Esita"
   },
   "contact": {
-    "title": "Kirjutage meile!",
-    "message": "Kui teil ei ole aega kõnede jaoks või lihtsalt vihkate neid",
+    "title": "Kirjuta meile!",
+    "message": "Kui sul pole palju aega kõnede jaoks või lihtsalt ei meeldi need",
     "form": {
-      "name": "Kasutajanimi",
-      "email": "E-post",
+      "name": "Nimi",
+      "email": "E-mail",
       "company": "Ettevõte",
       "message": "Sõnum",
-      "submit": "Saada",
+      "submit": "Esita",
+      "optional": "(valikuline)",
       "errors": {
         "name": "Nimi peab olema vähemalt 2 tähemärki pikk",
-        "email": "Vale e-posti aadress",
+        "email": "Kehtetu e-posti aadress",
         "message": "Sõnum peab olema vähemalt 10 tähemärki pikk"
+      }
+    }
+  },
+  "termsOfService": {
+    "title": "Teenuse Tingimused",
+    "description": "Tere tulemast Appstatisesse! Need tingimused määratlevad reeglid ja määrused Appstatisi veebisaidi kasutamiseks, mis asub aadressil www.appstatis.com.",
+    "content": {
+      "section1": {
+        "title": "Tingimuste Aktsepteerimine",
+        "description": "Sellele veebisaidile pääsemisega eeldame, et aktsepteerid neid tingimusi. Ära kasuta Appstatisi, kui sa ei nõustu kõigi sellel lehel toodud tingimustega."
+      },
+      "section2": {
+        "title": "Maksmine",
+        "description": "Appstatis pakub teenuseid nii ühekordse makse kui ka tellimusmudeli alusel. Teenuste ulatus ja kõik nende teenustega seotud tasud edastatakse meie veebisaidil või otse sinuga."
+      },
+      "section3": {
+        "title": "Tellimuse Tingimused",
+        "description": "Tellimusmudeli teenuste puhul arveldatakse sind ette korduvate ja perioodiliste vahedega. Sinu tellimus uuendatakse automaatselt täpselt samadel tingimustel, kui sa ei tühista seda või Appstatis ei tühista seda. Kehtiv makseviis, sealhulgas krediitkaart, on vajalik tellimuse makse töötlemiseks."
+      },
+      "section4": {
+        "title": "Tagasimaksed",
+        "description": "Appstatisi teenuste tagasimaksed on saadaval ainult teatud tingimustel. Projekti alguses on nõutav mitte-tagastatav sissemakse, et katta esialgsed ressursid ja tööjõukulu. Kui otsustad projekti pooleli jätta, võib tagasimakset kaaluda proportsionaalselt projekti valmimise staatuse põhjal. Kõik tagasimaksete taotlused peavad olema esitatud kirjalikult 7 päeva jooksul pärast viimase etapi esitamist. Me jätame endale õiguse proovida esmalt probleeme lahendada enne tagasimaksete väljastamist."
+      },
+      "section5": {
+        "title": "Tühistamine",
+        "description": "Sa saad oma tellimuse igal ajal tühistada. Palun pane tähele, et juba makstud tasudele tagasimakseid ei toimu, välja arvatud juhul, kui kohaldatav seadus seda nõuab."
+      },
+      "section6": {
+        "title": "Teenuse ja Hindade Muudatused",
+        "description": "Meie teenuste hinnad võivad muutuda ette teatamata. Me jätame endale õiguse igal ajal teenust (või selle osa või sisu) muuta või lõpetada ette teatamata."
+      },
+      "section7": {
+        "title": "Reguleeriv Seadus",
+        "description": "Need Tingimused on reguleeritud ja tõlgendatud vastavalt Eesti Vabariigi seadustele, arvestamata selle õiguste konfliktide sätteid. Meie õiguste või Tingimuste sätete täitmata jätmine ei tähenda nende õiguste loobumist. Kui mõni Tingimuste säte tunnistatakse kohtu poolt kehtetuks või täitmisele mittekuuluvaks, jäävad ülejäänud Tingimuste sätted kehtima. Need Tingimused moodustavad meie vahelise teenuse kokkuleppe ja asendavad kõik varasemad kokkulepped, mis meil võisid teenuse osas olla."
+      },
+      "section8": {
+        "title": "Tingimuste Muudatused",
+        "description": "Jätame endale õiguse oma ainuvõimel muuta või asendada neid Tingimusi igal ajal. Kui muudatus on oluline, anname vähemalt 30 päeva ette teatada enne uute tingimuste jõustumist. Mis loetakse olulisteks muudatusteks, määratakse meie ainuvõimel."
+      },
+      "footer": {
+        "title": "Võta Meiega Ühendust",
+        "description": "Kui sul on küsimusi nende Tingimuste kohta, palun võta meiega ühendust aadressil <emailLink>paul@appstatis.com</emailLink>",
+        "lastUpdated": "Viimati uuendatud: 7. märts 2023."
       }
     }
   },
   "privacyPolicy": {
     "title": "Privaatsuspoliitika",
-    "description": "Teie privaatsus on meile oluline. Appstatisi poliitika on austada teie privaatsust igasuguste andmete osas, mida me võime teie kohta koguda meie veebisaidilt ja teistelt meie omanduses olevatelt ja hallatavatelt saitidelt.",
+    "description": "Sinu privaatsus on meile oluline. Appstatisi poliitika on austada sinu privaatsust seoses igasuguste andmetega, mida võime koguda meie veebisaidilt ja teistelt meie omanduses olevatelt ja hallatavatelt saitidelt.",
     "content": {
       "section1": {
-        "title": "Kogutud Teave",
-        "description": "Küsimme isikuandmeid ainult siis, kui see on tõeliselt vajalik teenuse pakkumiseks. Me kogume andmeid ausate ja seaduslike meetoditega, teie teadlikkuse ja nõusolekuga. Anname teile teada, miks me andmeid kogume ja kuidas neid kasutatakse."
+        "title": "Kogutavad Andmed",
+        "description": "Küsimine isikuandmete järele toimub ainult siis, kui meil on tõeliselt vajalik pakkuda sulle teenust. Kogume andmeid õigete ja seaduslike meetoditega, sinu teadlikkuse ja nõusolekuga. Anname ka teada, miks me neid kogume ja kuidas neid kasutatakse."
       },
       "section2": {
-        "title": "Teabe Kasutamine",
-        "description": "Kogutud teavet kasutatakse meie pakutavate teenuste parandamiseks, teie kasutajakogemuse kohandamiseks ja teie Appstatisi konto andmete eelnevalt täitmiseks, kui see on kohaldatav."
+        "title": "Andmete Kasutamine",
+        "description": "Kogutud andmeid kasutatakse meie teenuste täiustamiseks, sinu kasutajakogemuse isikupärastamiseks ja sinu Appstatisi konto andmete eelkoostamiseks, kui see on asjakohane."
       },
       "section3": {
-        "title": "Teabe Säilitamine",
-        "description": "Kogutud teavet säilitame ainult niikaua, kui see on vajalik soovitud teenuse pakkumiseks. Salvestatud andmeid kaitseme äriliselt aktsepteeritavate meetoditega, et vältida kadumist ja vargust, samuti volitamata juurdepääsu, avaldamist, kopeerimist, kasutamist või muutmist."
+        "title": "Andmete Säilitamine",
+        "description": "Kogutud andmeid säilitame ainult nii kaua, kui on vajalik sinu taotletud teenuse pakkumiseks. Seda andmeid, mida me säilitame, kaitseme kaubanduslikult vastuvõetavate meetoditega, et vältida kaotsiminekut, vargust, samuti volitamata juurdepääsu, avaldamist, kopeerimist, kasutamist või muutmist."
       },
       "section4": {
-        "title": "Teabe Jagamine",
-        "description": "Me ei jaga isikuandmeid avalikult ega kolmandate isikutega, välja arvatud juhul, kui seadus nõuab seda."
+        "title": "Andmete Jagamine",
+        "description": "Me ei jaga isiklikke tuvastatavaid andmeid avalikult ega kolmandate osapooltega, välja arvatud juhul, kui seadus nõuab."
       },
       "section5": {
         "title": "Andmekaitse",
-        "description": "Appstatis tegutseb isikuandmete töötlejana ja vastutava töötlejana seoses meie teenuste kaudu töödeldud isikuandmetega, järgides kohaldatavaid andmekaitse seadusi, sealhulgas ELi isikuandmete kaitse üldmäärust (GDPR)."
+        "description": "Appstatis tegutseb nii andmete vastutava töötlejana kui andmete töötlejana seoses isikuandmetega, mida töödeldakse meie teenuste kaudu vastavalt kehtivatele andmekaitse seadustele, sealhulgas ELi üldine andmekaitse määrus (GDPR)."
       },
       "section6": {
         "title": "Välimised Saidid",
-        "description": "Meie veebisait võib sisaldada linke välistele saitidele, mida me ei halda. Palun arvestage, et meil pole kontrolli nende saitide sisu ja praktikate üle ning me ei saa vastutada nende privaatsuspoliitikate eest."
+        "description": "Meie veebisait võib linkida välimistele saitidele, mida me ei halda. Palun ole teadlik, et meil pole nende saitide sisu ja praktikate üle kontrolli ning me ei saa vastutada nende privaatsuspoliitikate eest."
       },
       "section7": {
-        "title": "Teie Õigused",
-        "description": "Teil on õigus keelduda meie palvest teie isikuandmete osas, mõistes, et me ei pruugi olla suuteline pakkuma teile mõningaid soovitud teenuseid."
+        "title": "Sinu Õigused",
+        "description": "Sul on õigus keelduda meie nõudest sinu isikuandmete järele, arvestades, et me ei pruugi olla suuteline pakkuma mõningaid soovitud teenuseid."
       },
       "section8": {
         "title": "Selle Poliitika Aktsepteerimine",
-        "description": "Teie jätkuv veebisaidi kasutamine loetakse meie privaatsuse ja isikuandmete praktikate aktsepteerimiseks."
+        "description": "Sinu jätkuv veebisaidi kasutamine loetakse meie privaatsuspraktikate ja isikuandmete käsitlemise aktsepteerimiseks."
       },
       "footer": {
-        "title": "Kontaktige Meid",
-        "description": "Kui teil on küsimusi nende tingimuste kohta, võtke meiega ühendust aadressil <emailLink>paul@appstatis.com</emailLink>",
+        "title": "Võta Meiega Ühendust",
+        "description": "Kui sul on küsimusi nende Tingimuste kohta, palun võta meiega ühendust aadressil <emailLink>paul@appstatis.com</emailLink>",
         "lastUpdated": "Viimati uuendatud: 7. märts 2023."
       }
     }

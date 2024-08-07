@@ -1,6 +1,8 @@
 {
   "common": {
-    "buttonBack": "Back"
+    "buttonBack": "Back",
+    "buttonGetStarted": "Get Started",
+    "buttonBookCall": "Book a Call"
   },
   "navbar": {
     "services": "Services",
@@ -22,8 +24,7 @@
   },
   "hero": {
     "title": "Unleash ideas Embrace Innovation",
-    "description": "At <bold>{{appName}}</bold>, we believe in the power of transformation through technology. Our mission is to help you unleash your most ambitious ideas and turn them into reality.",
-    "getStarted": "Get Started"
+    "description": "At <bold>{{appName}}</bold>, we believe in the power of transformation through technology. Our mission is to help you unleash your most ambitious ideas and turn them into reality."
   },
   "services": {
     "title": "Services",
@@ -51,26 +52,32 @@
     "description": "Expert web development services that are available around the clock, ensuring personalized and technology-driven solutions to meet your project needs, allowing you to focus on your core business while we handle your web development requirements.",
     "options": [
       {
+        "id": "transparent-processes",
         "title": "Transparent Processes",
         "description": "We promise full transparency in all our dealings, giving you insight into every stage of our process."
       },
       {
+        "id": "flexible-communication",
         "title": "Flexible Communication",
         "description": "We prioritize efficient, meeting-free interactions, but are ready to meet when needed."
       },
       {
+        "id": "tailored-solutions",
         "title": "Tailored Solutions",
         "description": "Understanding your needs is our top priority. We promise personalized solutions that are tailored to meet your unique challenges and objectives."
       },
       {
+        "id": "innovation-and-excellence",
         "title": "Innovation and Excellence",
         "description": "We utilize modern, sleek, and optimized technologies to build superior web applications that offer the best performance in the market."
       },
       {
+        "id": "unlimited-requests",
         "title": "Unlimited Requests",
         "description": "We offer unlimited support—no matter how many requests you have, we're here to make each one happen."
       },
       {
+        "id": "support-and-aftercare",
         "title": "Support and Aftercare",
         "description": "We promise ongoing support and aftercare, ensuring that you continue to benefit from our services long after the initial purchase."
       }
@@ -86,8 +93,9 @@
     "options": [
       {
         "title": "One Time",
+        "type": "one-time",
         "description": "Tailored for quick resolutions without ongoing obligations.",
-        "price": "$600",
+        "cost": "600",
         "features": [
           "5 pages.",
           "All-inclusive technical support.",
@@ -97,8 +105,9 @@
       },
       {
         "title": "Periodic",
+        "type": "periodic",
         "description": "Ideal for small businesses and startups.",
-        "price": "$150",
+        "cost": "150",
         "features": [
           "5 pages.",
           "Comprehensive technical support.",

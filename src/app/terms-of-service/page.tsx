@@ -2,10 +2,9 @@
 
 import Trans from "next-translate/Trans";
 import useTranslation from "next-translate/useTranslation";
-import { LinkWithLang } from "@/components/link-with-lang";
 import { BeautifulLink } from "@/components/beautiful-link";
-import { buttonVariants } from "@/components/ui/button";
 import { Header } from "@/components/privacyAndTerms/Header";
+import { BackButton } from "@/components/back-button";
 
 /**
  * The Terms of Service page.
@@ -20,12 +19,7 @@ export default function TermsOfService() {
 
   return (
     <main className="max-w-3xl mx-auto my-10">
-      <LinkWithLang
-        href="/"
-        className={`mb-3 ${buttonVariants({ variant: "ghost" })}`}
-      >
-        {t("common.buttonBack")}
-      </LinkWithLang>
+      <BackButton />
 
       <article className="space-y-3">
         <header>

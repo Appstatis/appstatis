@@ -144,7 +144,7 @@
     "title": "Text us instead!",
     "message": "In case you don't have much time for calls or just hate them",
     "form": {
-      "username": "Username",
+      "name": "Name",
       "email": "Email",
       "company": "Company",
       "message": "Message",

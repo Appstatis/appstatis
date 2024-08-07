@@ -144,7 +144,7 @@
     "title": "Kirjutage meile!",
     "message": "Kui teil ei ole aega kõnede jaoks või lihtsalt vihkate neid",
     "form": {
-      "username": "Kasutajanimi",
+      "name": "Kasutajanimi",
       "email": "E-post",
       "company": "Ettevõte",
       "message": "Sõnum",

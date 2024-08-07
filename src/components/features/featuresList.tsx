@@ -34,9 +34,10 @@ export const FeaturesList = ({
           ref={ref}
           className="opacity-0 features mt-8 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3"
         >
-          {featuresList.map((feature, index) => (
+          {featuresList.map((feature) => (
             <Feature
-              key={index}
+              key={feature.id}
+              id={feature.id}
               Icon={feature.Icon}
               title={feature.title}
               description={feature.description}

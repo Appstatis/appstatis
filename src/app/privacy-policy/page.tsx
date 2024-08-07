@@ -3,7 +3,6 @@
 import Trans from "next-translate/Trans";
 import { BeautifulLink } from "@/components/beautiful-link";
 import useTranslation from "next-translate/useTranslation";
-import { Header } from "@/components/privacyAndTerms/Header";
 import { BackButton } from "@/components/back-button";
 import { Header } from "@/components/privacyAndTerms/Header";
 

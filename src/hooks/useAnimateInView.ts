@@ -40,7 +40,7 @@ export const useAnimateInView = (
         duration,
       });
     }
-  }, [inView]);
+  }, [duration, inView, opacity, selector, translateY]);
 
   return { ref, inView };
 };

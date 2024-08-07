@@ -1,20 +1,39 @@
 "use client";
 
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuLabel,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
 import useTranslation from "next-translate/useTranslation";
 import { useContext } from "react";
 import ScrollContext from "@/context/scrollContext";
 import { handleSmoothScroll } from "@/utils/handleSmoothScroll";
 import { useLang } from "@/hooks/useLang";
-import { LinkWithLang } from "@/components/link-with-lang";
 import { Button } from "./ui/button";
+import { useRouter } from "next/navigation";
 
 function ChangeLanguage() {
-  const { langToSwitch } = useLang();
+  const router = useRouter();
+  const { curLang, languages } = useLang();
+
+  const handleLangChange = (lang: string) => {
+    router.push(`/?lang=${lang}`);
+  };
 
   return (
-    <Button variant="ghost">
-      <LinkWithLang href="/">{langToSwitch}</LinkWithLang>
-    </Button>
+    <DropdownMenu>
+      <DropdownMenuTrigger>{curLang}</DropdownMenuTrigger>
+      <DropdownMenuContent>
+        {languages.map((lang) => (
+          <DropdownMenuItem key={lang} onClick={() => handleLangChange(lang)}>
+            {lang}
+          </DropdownMenuItem>
+        ))}
+      </DropdownMenuContent>
+    </DropdownMenu>
   );
 }
 

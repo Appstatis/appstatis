@@ -1,5 +1,3 @@
-"use client";
-
 import Trans from "next-translate/Trans";
 import useTranslation from "next-translate/useTranslation";
 import { BeautifulLink } from "@/components/beautiful-link";

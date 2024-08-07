@@ -3,7 +3,6 @@
 import useTranslation from "next-translate/useTranslation";
 import React from "react";
 import { FeaturesList } from "./featuresList";
-import { featuresList } from "../../data/featuresList";
 import { featuresIcons } from "@/data/featuresIcons";
 import { Feature } from "@/types/Feature";
 

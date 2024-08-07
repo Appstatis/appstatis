@@ -1,18 +1,23 @@
+"use client";
+
 import Trans from "next-translate/Trans";
 import { BeautifulLink } from "@/components/beautiful-link";
 import useTranslation from "next-translate/useTranslation";
 import { buttonVariants } from "@/components/ui/button";
-import Link from "next/link";
 import { Header } from "@/components/privacyAndTerms/Header";
+import { LinkWithLang } from "@/components/link-with-lang";
 
 export default function PrivacyPolicy() {
   const { t } = useTranslation("common");
 
   return (
     <main className="max-w-3xl mx-auto my-10">
-      <Link href="/" className={`mb-3 ${buttonVariants({ variant: "ghost" })}`}>
+      <LinkWithLang
+        href="/"
+        className={`mb-3 ${buttonVariants({ variant: "ghost" })}`}
+      >
         {t("common.buttonBack")}
-      </Link>
+      </LinkWithLang>
 
       <article className="space-y-3">
         <header>

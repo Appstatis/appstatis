@@ -51,7 +51,7 @@ export const CTA = () => {
         onClick={() => handleSmoothScroll(pricing)}
         className="font-bold text-black bg-white py-2 px-4 rounded-xl border-4 border-white transition duration-500 hover:text-white hover:bg-gray-900"
       >
-        {t("hero.getStarted")}
+        {t("common.buttonGetStarted")}
       </button>
     </div>
   );

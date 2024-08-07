@@ -149,6 +149,7 @@
       "company": "Company",
       "message": "Message",
       "submit": "Submit",
+      "optional": "(optional)",
       "errors": {
         "name": "Name must be at least 2 characters long",
         "email": "Invalid email address",

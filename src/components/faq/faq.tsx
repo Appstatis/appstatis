@@ -4,8 +4,8 @@ import useTranslation from "next-translate/useTranslation";
 import { useContext } from "react";
 import ScrollContext from "@/context/scrollContext";
 import { FAQItems } from "./faqItems";
-import { FAQ as FAQData } from "@/data/faq";
 import { Header } from "../header";
+import type { FAQItem } from "@/types/FAQItem";
 
 /**
  * This component abstracts the complexity of FAQItems and FAQItem.
@@ -17,10 +17,16 @@ export const FAQ = () => {
   const { t } = useTranslation("common");
   const { faq } = useContext(ScrollContext);
 
+  const faqQuestions = t(
+    "faq.questions",
+    {},
+    { returnObjects: true }
+  ) as FAQItem[];
+
   return (
     <section ref={faq} className="grid justify-center">
       <Header title={t("faq.title")} />
-      <FAQItems faq={FAQData} />
+      <FAQItems faq={faqQuestions} />
     </section>
   );
 };

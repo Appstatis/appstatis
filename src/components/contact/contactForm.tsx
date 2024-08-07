@@ -85,7 +85,7 @@ export const ContactForm = () => {
           name="name"
           render={({ field }) => (
             <FormItem>
-              <FormLabel>{t("contact.form.username")}</FormLabel>
+              <FormLabel>{t("contact.form.name")}</FormLabel>
               <FormControl>
                 <Input {...field} />
               </FormControl>

@@ -1,3 +1,4 @@
+import useTranslation from "next-translate/useTranslation";
 import type { Service as TService } from "@/types/Service";
 import { memo } from "react";
 import ScrollContext from "@/context/scrollContext";
@@ -15,6 +16,7 @@ import { Button } from "../ui/button";
  * @returns A react element that represents a service with an icon, title, and description
  */
 const ServiceComponent = ({ Icon, title, description }: TService) => {
+  const { t } = useTranslation("common");
   const { pricing } = useContext(ScrollContext);
 
   return (
@@ -27,7 +29,7 @@ const ServiceComponent = ({ Icon, title, description }: TService) => {
         <h3 className="font-bold text-2xl">{title}</h3>
         <p>{description}</p>
       </article>
-      <Button>Get Started</Button>
+      <Button>{t("common.buttonGetStarted")}</Button>
     </div>
   );
 };

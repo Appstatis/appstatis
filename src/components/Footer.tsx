@@ -1,6 +1,7 @@
 import useTranslation from "next-translate/useTranslation";
 import Trans from "next-translate/Trans";
 import Link from "next/link";
+import { FooterLinks } from "./footer-links";
 
 /**
  * The footer component.
@@ -19,27 +20,7 @@ export const Footer = () => {
         <div className="flex items-center gap-2">
           <span className="text-sm font-medium text-gray-300">appstatis</span>
         </div>
-        <nav className="flex items-center gap-4">
-          <Link
-            className="text-sm font-medium text-gray-400 hover:text-gray-200"
-            href="terms-of-service"
-          >
-            {t("footer.links.termsOfService")}
-          </Link>
-          <Link
-            className="text-sm font-medium text-gray-400 hover:text-gray-200"
-            href="privacy-policy"
-          >
-            {t("footer.links.privacyPolicy")}
-          </Link>
-          <Link
-            className="text-sm font-medium text-gray-400 hover:text-gray-200"
-            href="https://github.com/appstatis/appstatis"
-            target="_blank"
-          >
-            {t("footer.links.github")}
-          </Link>
-        </nav>
+        <FooterLinks />
         <div className="text-center sm:text-right">
           <p className="text-sm text-gray-400">
             {t("footer.copyright.message")}

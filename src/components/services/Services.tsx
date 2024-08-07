@@ -1,11 +1,12 @@
 "use client";
 
+import { servicesIcons } from "@/data/servicesIcons";
 import useTranslation from "next-translate/useTranslation";
 import { Header } from "../header";
 import { ServicesList } from "@/components/services/ServicesList";
-import { services } from "@/data/services";
 import ScrollContext from "@/context/scrollContext";
 import { useContext } from "react";
+import type { Service } from "@/types/Service";
 
 /**
  * This component abstracts the complexity of ServicesList and Service component.
@@ -16,6 +17,16 @@ import { useContext } from "react";
 export const Services = () => {
   const { t } = useTranslation("common");
   const { services: servicesRef } = useContext(ScrollContext);
+
+  const services = t(
+    "services.options",
+    {},
+    { returnObjects: true }
+  ) as Service[];
+
+  services.forEach((service) => {
+    service.Icon = servicesIcons[service.id];
+  });
 
   return (
     <section

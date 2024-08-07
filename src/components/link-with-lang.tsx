@@ -15,11 +15,23 @@ import { useRouter } from "next/navigation";
 export const LinkWithLang = ({
   href,
   children,
+  className,
+  target,
 }: {
   href: string;
   children: React.ReactNode;
+  className?: string;
+  target?: string;
 }) => {
-  const { langToSwitch } = useLang();
+  const { curLang } = useLang();
 
-  return <Link href={`${href}?lang=${langToSwitch}`}>{children}</Link>;
+  return (
+    <Link
+      target={target}
+      className={className}
+      href={`${href}?lang=${curLang}`}
+    >
+      {children}
+    </Link>
+  );
 };

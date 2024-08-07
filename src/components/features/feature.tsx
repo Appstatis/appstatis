@@ -5,7 +5,7 @@ import { Feature as TFeature } from "@/types/Feature";
  * FeatureComponent is a functional component that represents
  * a single feature of the features section on the index page.
  */
-const FeatureComponent = ({ Icon, title, description }: TFeature) => {
+const FeatureComponent = ({ id, Icon, title, description }: TFeature) => {
   return (
     <div className="block rounded-xl border border-gray-800 p-8 shadow-xl">
       <Icon width={22} height={22} color="white" />

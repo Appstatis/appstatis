@@ -1,3 +1,4 @@
+import useTranslation from "next-translate/useTranslation";
 import { memo } from "react";
 import { buttonVariants } from "../ui/button";
 import type { PricingItem as TPricingItem } from "@/types/PricingItem";
@@ -17,6 +18,8 @@ const PricingItemComponent = ({
   features,
   type,
 }: TPricingItem) => {
+  const { t } = useTranslation("common");
+
   const isPeriodic = type === "periodic";
   const isOneTime = type === "one-time";
   return (
@@ -49,7 +52,7 @@ const PricingItemComponent = ({
         href="https://cal.com/appstatis"
         className={buttonVariants({ variant: "default" })}
       >
-        Book a Call
+        {t("common.buttonBookCall")}
       </Link>
     </div>
   );

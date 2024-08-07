@@ -27,6 +27,25 @@ import { Textarea } from "../ui/textarea";
 export const ContactForm = () => {
   const { t } = useTranslation("common");
 
+  /**
+   * FieldClue component that displays a required or optional field indicator.
+   *
+   * @param type - "required" or "optional"
+   * @returns A required or optional field indicator
+   */
+  const FieldClue = ({ type }: { type: "required" | "optional" }) => {
+    const isRequired = type === "required";
+    const color = isRequired ? "text-red-500" : "text-gray-500";
+
+    return (
+      <span className={`pl-1 italic text-xs ${color}`}>
+        <span className="font-bold">
+          {isRequired ? "*" : t("contact.form.optional")}
+        </span>
+      </span>
+    );
+  };
+
   const formSchema = z.object({
     name: z.string().min(2, {
       message: t("contact.form.errors.name"),
@@ -85,7 +104,10 @@ export const ContactForm = () => {
           name="name"
           render={({ field }) => (
             <FormItem>
-              <FormLabel>{t("contact.form.name")}</FormLabel>
+              <FormLabel>
+                {t("contact.form.name")}
+                <FieldClue type="required" />
+              </FormLabel>
               <FormControl>
                 <Input {...field} />
               </FormControl>
@@ -98,7 +120,10 @@ export const ContactForm = () => {
           name="email"
           render={({ field }) => (
             <FormItem>
-              <FormLabel>{t("contact.form.email")}</FormLabel>
+              <FormLabel>
+                {t("contact.form.email")}
+                <FieldClue type="required" />
+              </FormLabel>
               <FormControl>
                 <Input {...field} />
               </FormControl>
@@ -111,7 +136,10 @@ export const ContactForm = () => {
           name="company"
           render={({ field }) => (
             <FormItem>
-              <FormLabel>{t("contact.form.company")}</FormLabel>
+              <FormLabel>
+                {t("contact.form.company")}
+                <FieldClue type="optional" />
+              </FormLabel>
               <FormControl>
                 <Input {...field} />
               </FormControl>
@@ -124,7 +152,10 @@ export const ContactForm = () => {
           name="message"
           render={({ field }) => (
             <FormItem>
-              <FormLabel>{t("contact.form.message")}</FormLabel>
+              <FormLabel>
+                {t("contact.form.message")}
+                <FieldClue type="required" />
+              </FormLabel>
               <FormControl>
                 <Textarea {...field} />
               </FormControl>

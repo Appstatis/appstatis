@@ -18,7 +18,7 @@ export const Contact = () => {
   return (
     <section
       ref={contact}
-      className="flex flex-col min-h-[75vh] mt-52 items-center w-full"
+      className="flex flex-col min-h-[75vh] pt-[10vh] items-center w-full"
     >
       <Header title={t("contact.title")} description={t("contact.message")} />
       <ContactForm />

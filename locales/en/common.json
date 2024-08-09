@@ -127,15 +127,15 @@
     "questions": [
       {
         "question": "How do you handle communication during the project?",
-        "answer": "We use Basecamp for project management and communication, but we can adapt to your preferred method, whether it’s email, phone, or another channel."
+        "answer": "We communicate primarily via email, messenger, or any other method that is most convenient for you. We prioritize flexibility to ensure smooth communication throughout the project."
       },
       {
         "question": "What about payments?",
-        "answer": "We use Stripe for secure payments. For subscription services, payments are automatic. For specific projects, we’ll send an invoice."
+        "answer": "For project-based work, we require a 30% upfront payment before starting. The remaining balance will be invoiced upon project completion. For subscription services, invoices will be sent at the beginning of each billing period."
       },
       {
         "question": "How can I cancel my subscription?",
-        "answer": "Contact us via email or phone to cancel. Your subscription will remain active until the end of the current billing period."
+        "answer": "To cancel your subscription, please contact us via email or messenger. Your subscription will remain active until the end of the current billing period."
       },
       {
         "question": "What support do you offer after launch?",

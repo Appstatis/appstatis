@@ -15,66 +15,66 @@
     "links": {
       "termsOfService": "Terms of Service",
       "privacyPolicy": "Privacy Policy",
-      "github": "Github"
+      "github": "GitHub"
     },
     "copyright": {
-      "message": "© 2024 appstatis. All rights reserved.",
+      "message": "© 2024 Appstatis. All rights reserved.",
       "license": "This app is open source and licensed under the <licenseLink>Apache License 2.0</licenseLink>"
     }
   },
   "hero": {
-    "title": "Unleash ideas Embrace Innovation",
-    "description": "At <bold>{{appName}}</bold>, we believe in the power of transformation through technology. Our mission is to help you unleash your most ambitious ideas and turn them into reality."
+    "title": "Transform Your Ideas into Reality",
+    "description": "At <bold>{{appName}}</bold>, we focus on delivering practical solutions that help small businesses succeed online. Let us help you turn your ideas into a user-friendly website."
   },
   "services": {
-    "title": "Services",
-    "description": "We offer a wide range of services to help you achieve your goals. From website design to web development, we have the expertise to deliver your vision to life.",
+    "title": "Our Services",
+    "description": "We provide a range of services designed to help you build and maintain a successful online presence. Whether you need a new website or ongoing support, we're here to assist.",
     "options": [
       {
         "id": "website-design",
         "title": "Website Design",
-        "description": "Creating visually stunning, user-centric web designs that ensure a seamless user experience across all devices."
+        "description": "Creating simple, clean, and effective web designs that look great on all devices and are easy for your customers to use."
       },
       {
         "id": "website-development",
         "title": "Website Development",
-        "description": "Leveraging leading technologies to build fast, responsive websites that enhance user engagement and improve conversion rates."
+        "description": "Building reliable and efficient websites that help you connect with your audience and achieve your business goals."
       },
       {
         "id": "website-maintenance",
         "title": "Website Maintenance",
-        "description": "Providing comprehensive maintenance services including performance optimization, security updates, and timely enhancements to keep your site running smoothly."
+        "description": "Offering ongoing support to ensure your website runs smoothly, including updates, security checks, and performance improvements."
       }
     ]
   },
   "features": {
-    "title": "What we promise you",
-    "description": "Expert web development services that are available around the clock, ensuring personalized and technology-driven solutions to meet your project needs, allowing you to focus on your core business while we handle your web development requirements.",
+    "title": "What We Offer",
+    "description": "We provide dependable web solutions tailored to your needs. Our focus is on delivering value with straightforward and effective services.",
     "options": [
       {
         "id": "transparent-processes",
-        "title": "Transparent Processes",
-        "description": "We promise full transparency in all our dealings, giving you insight into every stage of our process."
+        "title": "Clear and Open Communication",
+        "description": "We keep you informed at every step, so you know exactly what’s happening with your project."
       },
       {
         "id": "flexible-communication",
         "title": "Flexible Communication",
-        "description": "We prioritize efficient, meeting-free interactions, but are ready to meet when needed."
+        "description": "We’re here to make things easy for you—whether you prefer emails, calls, or meetings, we adapt to your needs."
       },
       {
         "id": "tailored-solutions",
-        "title": "Tailored Solutions",
-        "description": "Understanding your needs is our top priority. We promise personalized solutions that are tailored to meet your unique challenges and objectives."
+        "title": "Customized Solutions",
+        "description": "Your business is unique, and we provide tailored solutions that address your specific needs and goals."
       },
       {
         "id": "innovation-and-excellence",
-        "title": "Innovation and Excellence",
-        "description": "We utilize modern, sleek, and optimized technologies to build superior web applications that offer the best performance in the market."
+        "title": "Modern Solutions",
+        "description": "We use up-to-date, user-friendly technology to create websites that perform well and look great."
       },
       {
         "id": "unlimited-requests",
         "title": "Unlimited Requests",
-        "description": "We offer unlimited support—no matter how many requests you have, we're here to make each one happen."
+        "description": "Need changes? We handle unlimited requests, ensuring that your website evolves with your business."
       },
       {
         "id": "support-and-aftercare",
@@ -84,77 +84,77 @@
     ]
   },
   "about": {
-    "title": "What is appstatis?",
-    "message": "<p>Welcome to appstatis! I'm <strong>Pavel Bogatõr</strong> (you can call me Paul), a dedicated web designer and developer here to bring your online vision to life. As a solo entrepreneur, I offer personalized, one-on-one service to ensure your website truly reflects your brand and meets your unique needs.</p> <p>Currently, I'm a fourth-grade software engineering student at Tallinna Polütehnikum and an enthusiastic intern in the field. My fresh perspective and eagerness to embrace innovative solutions set me apart. I'm committed to staying on the cutting edge of web design and development, ready to tackle any challenge and bring creative ideas to your projects.</p> <p>For more information as well as my social media profiles, visit my <website>personal page</website> or contact me directly at:</p> <p>Email: <email>paul@appstatis.com</email></p> <p>Looking forward to working with you!</p>"
+    "title": "About Appstatis",
+    "message": "<p>Welcome to Appstatis! I’m <strong>Pavel Bogatõr</strong> (Paul), and I’m here to help small businesses succeed online. As a dedicated web designer and developer, I offer personalized service to ensure your website meets your needs.</p> <p>Currently a software engineering student and an intern, I bring a fresh perspective and a commitment to practical solutions. Let’s work together to create a website that’s effective and easy to manage.</p> <p>For more information or to get in touch, visit my <website>personal page</website> or email me at <email>paul@appstatis.com</email>.</p> <p>Looking forward to working with you!</p>"
   },
   "pricing": {
     "title": "Pricing",
-    "description": "Our pricing is designed to be simple and transparent. We offer a variety of pricing options to suit your needs.",
+    "description": "Our pricing is straightforward and designed to fit your needs. Choose from our clear and simple options or contact us for a custom plan.",
     "options": [
       {
-        "title": "One Time",
+        "title": "One-Time Payment",
         "type": "one-time",
-        "description": "Tailored for quick resolutions without ongoing obligations.",
+        "description": "Perfect for a complete project with no ongoing commitments.",
         "cost": "600",
         "features": [
           "5 pages.",
-          "All-inclusive technical support.",
-          "Post-launch support at $20/hr.",
+          "Technical support included.",
+          "Additional support at $20/hr.",
           "Excludes third-party expenses."
         ]
       },
       {
-        "title": "Periodic",
+        "title": "Monthly Subscription",
         "type": "periodic",
-        "description": "Ideal for small businesses and startups.",
+        "description": "Ideal for ongoing needs and support.",
         "cost": "150",
         "features": [
           "5 pages.",
           "Comprehensive technical support.",
-          "Continuous maintenance and proactive support.",
-          "Bug fixes and performance enhancements.",
-          "Note: Additional charges for third-party services may apply."
+          "Ongoing maintenance and updates.",
+          "Bug fixes and performance improvements.",
+          "Additional charges may apply for third-party services."
         ]
       },
       {
-        "title": "Custom",
-        "description": "Have a unique project in mind? Let's discuss your requirements and come up with a custom plan that suits your needs."
+        "title": "Custom Plan",
+        "description": "Have unique requirements? Let’s discuss a custom plan that fits your needs."
       }
     ]
   },
   "faq": {
-    "title": "Answers to some questions that might pop up in your mind",
+    "title": "Frequently Asked Questions",
     "questions": [
       {
-        "question": "How is communication handled during the project?",
-        "answer": "We manage our projects using Basecamp, a robust project management tool where you can add tasks, track progress, and communicate directly with us. If you prefer alternative communication methods, we are flexible and can also coordinate via email, phone, or any other channel that suits your convenience."
+        "question": "How do you handle communication during the project?",
+        "answer": "We use Basecamp for project management and communication, but we can adapt to your preferred method, whether it’s email, phone, or another channel."
       },
       {
-        "question": "How do you handle payment?",
-        "answer": "We offer a convenient auto-renewable subscription model for our fixed services, managed through Stripe to ensure secure and hassle-free payments. For specific projects or additional services outside the regular subscription, we will issue an invoice directly to you. This allows us to tailor our billing to your specific needs and service usage."
+        "question": "What about payments?",
+        "answer": "We use Stripe for secure payments. For subscription services, payments are automatic. For specific projects, we’ll send an invoice."
       },
       {
-        "question": "How do I cancel my subscription?",
-        "answer": "To cancel your subscription, simply contact us directly via email or phone, and we will guide you through the process. Please note that your subscription will remain active until the end of the current billing period, allowing you to continue accessing our services until then."
+        "question": "How can I cancel my subscription?",
+        "answer": "Contact us via email or phone to cancel. Your subscription will remain active until the end of the current billing period."
       },
       {
-        "question": "What support do you offer post-launch?",
-        "answer": "Post-launch, we offer comprehensive support to ensure your website continues to run smoothly. This includes technical support, bug fixes, performance optimizations, and content updates, tailored to keep your site up-to-date and performing optimally."
+        "question": "What support do you offer after launch?",
+        "answer": "We provide ongoing support, including technical assistance, bug fixes, and performance enhancements to keep your website in top shape."
       },
       {
-        "question": "What if I need changes or updates during the project?",
-        "answer": "We understand that project requirements can evolve. If you need any changes or updates, please communicate them through Basecamp or your preferred communication method. We are committed to accommodating your needs and ensuring the project aligns with your vision."
+        "question": "What if I need changes during the project?",
+        "answer": "We accommodate changes and updates as needed. Just let us know through your preferred communication method."
       }
     ]
   },
   "additionalQuestions": {
-    "title": "Don't see your question here?",
-    "message": "Feel free to reach out to us",
+    "title": "Have More Questions?",
+    "message": "Reach out to us anytime",
     "submit": "Submit"
   },
   "contact": {
-    "title": "Text us instead!",
-    "message": "In case you don't have much time for calls or just hate them",
+    "title": "Prefer to Text Us?",
+    "message": "If you’d rather not call, you can always send us a message.",
     "form": {
       "name": "Name",
       "email": "Email",

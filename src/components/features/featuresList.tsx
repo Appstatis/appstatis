@@ -23,28 +23,26 @@ export const FeaturesList = ({
   });
 
   return (
-    <>
-      <div className="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
-        <Header
-          title={t("features.title")}
-          description={t("features.description")}
-        />
+    <div className="mt-[15vh] mb-[20vh] mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
+      <Header
+        title={t("features.title")}
+        description={t("features.description")}
+      />
 
-        <div
-          ref={ref}
-          className="opacity-0 features mt-8 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3"
-        >
-          {featuresList.map((feature) => (
-            <Feature
-              key={feature.id}
-              id={feature.id}
-              Icon={feature.Icon}
-              title={feature.title}
-              description={feature.description}
-            />
-          ))}
-        </div>
+      <div
+        ref={ref}
+        className="opacity-0 features mt-8 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3"
+      >
+        {featuresList.map((feature) => (
+          <Feature
+            key={feature.id}
+            id={feature.id}
+            Icon={feature.Icon}
+            title={feature.title}
+            description={feature.description}
+          />
+        ))}
       </div>
-    </>
+    </div>
   );
 };

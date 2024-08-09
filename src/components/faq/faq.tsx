@@ -24,7 +24,7 @@ export const FAQ = () => {
   ) as FAQItem[];
 
   return (
-    <section ref={faq} className="grid justify-center">
+    <section ref={faq} className="pt-[10vh] grid justify-center">
       <Header title={t("faq.title")} />
       <FAQItems faq={faqQuestions} />
     </section>

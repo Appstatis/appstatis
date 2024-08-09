@@ -26,7 +26,7 @@ export const Pricing = () => {
   console.log(pricingOptions);
 
   return (
-    <section ref={pricing} className="min-h-[75vh] space-y-10">
+    <section ref={pricing} className="py-20 min-h-[75vh] space-y-10">
       <Header
         title={t("pricing.title")}
         description={t("pricing.description")}

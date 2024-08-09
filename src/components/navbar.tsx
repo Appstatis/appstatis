@@ -4,7 +4,6 @@ import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
-  DropdownMenuLabel,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import useTranslation from "next-translate/useTranslation";
@@ -12,7 +11,6 @@ import { useContext } from "react";
 import ScrollContext from "@/context/scrollContext";
 import { handleSmoothScroll } from "@/utils/handleSmoothScroll";
 import { useLang } from "@/hooks/useLang";
-import { Button } from "./ui/button";
 import { useRouter } from "next/navigation";
 
 function ChangeLanguage() {
@@ -26,7 +24,7 @@ function ChangeLanguage() {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger>{curLang}</DropdownMenuTrigger>
-      <DropdownMenuContent>
+      <DropdownMenuContent className="!min-w-0">
         {languages.map((lang) => (
           <DropdownMenuItem key={lang} onClick={() => handleLangChange(lang)}>
             {lang}

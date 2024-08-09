@@ -126,24 +126,24 @@
     "title": "Korduma Kippuvad Küsimused",
     "questions": [
       {
-        "question": "Kuidas toimub suhtlemine projekti ajal?",
-        "answer": "Kasutame projektihaldus- ja suhtlustööriistana Basecampi, kuid saame kohanduda teie eelistatud meetodiga, olgu selleks e-post, telefon või mõni muu kanal."
+        "question": "Kuidas toimub suhtlus projekti käigus?",
+        "answer": "Suhtleme peamiselt e-posti, sõnumite või muu teie jaoks kõige mugavama meetodi kaudu. Paindlikkus on meie prioriteet, et tagada sujuv suhtlus kogu projekti vältel."
       },
       {
-        "question": "Kuidas on maksetega?",
-        "answer": "Kasutame Stripe’i turvaliste maksete tegemiseks. Tellimusteenuste puhul toimub maksmine automaatselt. Konkreetsete projektide puhul saadame arve."
+        "question": "Kuidas on lood maksetega?",
+        "answer": "Projektipõhise töö puhul nõuame 30% ettemaksu enne töö alustamist. Lõppsumma esitatakse arvega pärast projekti valmimist. Tellimusteenuste puhul saadetakse arved iga arveldusperioodi alguses."
       },
       {
         "question": "Kuidas saan oma tellimuse tühistada?",
-        "answer": "Võtke meiega ühendust e-posti või telefoni teel, et tellimus tühistada. Teie tellimus jääb kehtima kuni jooksva arveldusperioodi lõpuni."
+        "answer": "Tellimuse tühistamiseks võtke meiega ühendust e-posti või sõnumite kaudu. Teie tellimus jääb aktiivseks kuni jooksva arveldusperioodi lõpuni."
       },
       {
-        "question": "Millist tuge pakute lansseerimise järel?",
-        "answer": "Pakume pidevat tuge, sealhulgas tehnilist abi, vigade parandamist ja jõudluse täiustamist, et teie veebisait püsiks tipptasemel."
+        "question": "Millist tuge pakute pärast käivitamist?",
+        "answer": "Pakume jätkuvat tuge, sealhulgas tehnilist abi, vigade parandust ja jõudluse parandamist, et hoida teie veebisait parimas korras."
       },
       {
-        "question": "Mida teha, kui projektis vajatakse muudatusi?",
-        "answer": "Meie kohandame muudatusi ja uuendusi vastavalt vajadusele. Lihtsalt andke meile teada oma eelistatud suhtlusmeetodiga."
+        "question": "Mis saab siis, kui ma vajan projekti käigus muudatusi?",
+        "answer": "Teeme vajadusel muudatusi ja uuendusi. Andke meile lihtsalt teada teile sobiva suhtlusmeetodi kaudu."
       }
     ]
   },

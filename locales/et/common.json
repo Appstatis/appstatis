@@ -256,5 +256,13 @@
         "lastUpdated": "Viimati uuendatud: 7. märts 2023."
       }
     }
+  },
+  "unsubscribe": {
+    "title": "Kahju, et lahkud, aga respekteerime sinu postkasti",
+    "description": "Sisesta oma e-posti aadress allpool, et lõpetada meie e-kirjade saamine.",
+    "form": {
+      "email": "E-posti aadress",
+      "submit": "Saada"
+    }
   }
 }

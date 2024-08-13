@@ -256,5 +256,13 @@
         "lastUpdated": "Last updated: 7 March 2023."
       }
     }
+  },
+  "unsubscribe": {
+    "title": "We're sad to see you go, but we respect your inbox",
+    "description": "Enter your email below to stop receiving our emails.",
+    "form": {
+      "email": "Email",
+      "submit": "Submit"
+    }
   }
 }

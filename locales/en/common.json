@@ -2,7 +2,8 @@
   "common": {
     "buttonBack": "Back",
     "buttonGetStarted": "Get Started",
-    "buttonBookCall": "Book a Call"
+    "buttonBookCall": "Book a Call",
+    "errorMessage": "Something went wrong. Please try again later."
   },
   "navbar": {
     "services": "Services",
@@ -166,7 +167,8 @@
         "name": "Name must be at least 2 characters long",
         "email": "Invalid email address",
         "message": "Message must be at least 10 characters long"
-      }
+      },
+      "success": "Thank you for your message. We will get back to you soon."
     }
   },
   "termsOfService": {

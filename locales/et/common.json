@@ -91,6 +91,7 @@
   "pricing": {
     "title": "Hinnakiri",
     "description": "Meie hinnakiri on selge ja kohandatud teie vajadustele. Valige meie selged ja lihtsad valikud või võtke meiega ühendust kohandatud plaani saamiseks.",
+    "month": "kuu",
     "options": [
       {
         "title": "Ühekordne Maksmine",
@@ -100,7 +101,7 @@
         "features": [
           "5 lehte.",
           "Tehniline tugi sisaldatud.",
-          "Täiendav tugi hinnaga 20$/tunnis.",
+          "Täiendav tugi hinnaga 12€/tunnis.",
           "Kolmandate osapoolte kulud ei kuulu hinna sisse."
         ]
       },
@@ -108,7 +109,7 @@
         "title": "Kuu Tellimus",
         "type": "periodic",
         "description": "Ideaalne pidevaks vajaduseks ja toeks.",
-        "cost": "150",
+        "cost": "120",
         "features": [
           "5 lehte.",
           "Küsimustikutehniline tugi.",

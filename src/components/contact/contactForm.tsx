@@ -185,7 +185,7 @@ export const ContactForm = () => {
         </form>
       </Form>
       {isError ? (
-        <span className="text-red-500"></span>
+        <span className="text-red-500">{t("common.errorMessage")}</span>
       ) : isSuccess ? (
         <span className="text-green-500">{t("contact.form.success")}</span>
       ) : null}

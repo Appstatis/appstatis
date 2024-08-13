@@ -91,6 +91,7 @@
   "pricing": {
     "title": "Pricing",
     "description": "Our pricing is straightforward and designed to fit your needs. Choose from our clear and simple options or contact us for a custom plan.",
+    "month": "mo",
     "options": [
       {
         "title": "One-Time Payment",
@@ -100,7 +101,7 @@
         "features": [
           "5 pages.",
           "Technical support included.",
-          "Additional support at $20/hr.",
+          "Additional support at 12€/hr.",
           "Excludes third-party expenses."
         ]
       },
@@ -108,7 +109,7 @@
         "title": "Monthly Subscription",
         "type": "periodic",
         "description": "Ideal for ongoing needs and support.",
-        "cost": "150",
+        "cost": "120",
         "features": [
           "5 pages.",
           "Comprehensive technical support.",

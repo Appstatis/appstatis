@@ -34,8 +34,12 @@ const PricingItemComponent = ({
           <p className="text-sm">{description}</p>
         </header>
         <div>
-          {type && <span className="text-3xl">${cost}</span>}
-          <span>{isPeriodic && <span className="text-md">/mo</span>}</span>
+          {type && <span className="text-3xl">{cost}€</span>}
+          <span>
+            {isPeriodic && (
+              <span className="text-md">/{t("pricing.month")}</span>
+            )}
+          </span>
           <span>{isOneTime && <span className="text-3xl">+</span>}</span>
         </div>
         {features && (

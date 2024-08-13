@@ -1,5 +1,6 @@
 "use client";
 
+import { useState } from "react";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
@@ -25,6 +26,8 @@ import { Textarea } from "../ui/textarea";
  * @returns A contact form component
  */
 export const ContactForm = () => {
+  const [isError, setIsError] = useState(false);
+  const [isSuccess, setIsSuccess] = useState(false);
   const { t } = useTranslation("common");
 
   /**
@@ -75,98 +78,117 @@ export const ContactForm = () => {
    * @param values
    */
   const handleFetchFormAPI = async (values: z.infer<typeof formSchema>) => {
-    if (!process.env.NEXT_PUBLIC_FORMSPARK_ACTION_URL) return;
+    if (!process.env.NEXT_PUBLIC_FORMSPARK_CONTACT_ACTION_URL) {
+      throw new Error("No Formspark Action URL found");
+    }
 
-    const res = await fetch(process.env.NEXT_PUBLIC_FORMSPARK_ACTION_URL, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        Accept: "application/json",
-      },
-      body: JSON.stringify(values),
-    });
+    const res = await fetch(
+      process.env.NEXT_PUBLIC_FORMSPARK_CONTACT_ACTION_URL,
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify(values),
+      }
+    );
 
     if (!res.ok) throw new Error("Failed to submit form");
   };
 
   function onSubmit(values: z.infer<typeof formSchema>) {
-    handleFetchFormAPI(values);
+    try {
+      handleFetchFormAPI(values);
+    } catch (error) {
+      setIsError(true);
+    }
+
+    form.reset();
+    setIsSuccess(true);
   }
 
   return (
-    <Form {...form}>
-      <form
-        onSubmit={form.handleSubmit(onSubmit)}
-        className="w-full max-w-md space-y-3 p-4"
-      >
-        <FormField
-          control={form.control}
-          name="name"
-          render={({ field }) => (
-            <FormItem>
-              <FormLabel>
-                {t("contact.form.name")}
-                <FieldClue type="required" />
-              </FormLabel>
-              <FormControl>
-                <Input {...field} />
-              </FormControl>
-              <FormMessage />
-            </FormItem>
-          )}
-        />
-        <FormField
-          control={form.control}
-          name="email"
-          render={({ field }) => (
-            <FormItem>
-              <FormLabel>
-                {t("contact.form.email")}
-                <FieldClue type="required" />
-              </FormLabel>
-              <FormControl>
-                <Input {...field} />
-              </FormControl>
-              <FormMessage />
-            </FormItem>
-          )}
-        />
-        <FormField
-          control={form.control}
-          name="company"
-          render={({ field }) => (
-            <FormItem>
-              <FormLabel>
-                {t("contact.form.company")}
-                <FieldClue type="optional" />
-              </FormLabel>
-              <FormControl>
-                <Input {...field} />
-              </FormControl>
-              <FormMessage />
-            </FormItem>
-          )}
-        />
-        <FormField
-          control={form.control}
-          name="message"
-          render={({ field }) => (
-            <FormItem>
-              <FormLabel>
-                {t("contact.form.message")}
-                <FieldClue type="required" />
-              </FormLabel>
-              <FormControl>
-                <Textarea {...field} />
-              </FormControl>
-              <FormMessage />
-            </FormItem>
-          )}
-        />
-        <Button className="w-full" type="submit">
-          {t("contact.form.submit")}
-        </Button>
-      </form>
-    </Form>
+    <>
+      <Form {...form}>
+        <form
+          onSubmit={form.handleSubmit(onSubmit)}
+          className="w-full max-w-md space-y-3 p-4"
+        >
+          <FormField
+            control={form.control}
+            name="name"
+            render={({ field }) => (
+              <FormItem>
+                <FormLabel>
+                  {t("contact.form.name")}
+                  <FieldClue type="required" />
+                </FormLabel>
+                <FormControl>
+                  <Input {...field} />
+                </FormControl>
+                <FormMessage />
+              </FormItem>
+            )}
+          />
+          <FormField
+            control={form.control}
+            name="email"
+            render={({ field }) => (
+              <FormItem>
+                <FormLabel>
+                  {t("contact.form.email")}
+                  <FieldClue type="required" />
+                </FormLabel>
+                <FormControl>
+                  <Input {...field} />
+                </FormControl>
+                <FormMessage />
+              </FormItem>
+            )}
+          />
+          <FormField
+            control={form.control}
+            name="company"
+            render={({ field }) => (
+              <FormItem>
+                <FormLabel>
+                  {t("contact.form.company")}
+                  <FieldClue type="optional" />
+                </FormLabel>
+                <FormControl>
+                  <Input {...field} />
+                </FormControl>
+                <FormMessage />
+              </FormItem>
+            )}
+          />
+          <FormField
+            control={form.control}
+            name="message"
+            render={({ field }) => (
+              <FormItem>
+                <FormLabel>
+                  {t("contact.form.message")}
+                  <FieldClue type="required" />
+                </FormLabel>
+                <FormControl>
+                  <Textarea {...field} />
+                </FormControl>
+                <FormMessage />
+              </FormItem>
+            )}
+          />
+          <Button className="w-full" type="submit">
+            {t("contact.form.submit")}
+          </Button>
+        </form>
+      </Form>
+      {isError ? (
+        <span className="text-red-500"></span>
+      ) : isSuccess ? (
+        <span className="text-green-500">{t("contact.form.success")}</span>
+      ) : null}
+    </>
   );
 };

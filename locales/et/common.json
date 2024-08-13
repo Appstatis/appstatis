@@ -2,7 +2,8 @@
   "common": {
     "buttonBack": "Tagasi",
     "buttonGetStarted": "Alusta",
-    "buttonBookCall": "Broneeri kõne"
+    "buttonBookCall": "Broneeri kõne",
+    "errorMessage": "Midagi läks valesti. Palun proovige hiljem uuesti."
   },
   "navbar": {
     "services": "Teenused",
@@ -166,7 +167,8 @@
         "name": "Nimi peab olema vähemalt 2 tähemärki pikk",
         "email": "Kehtetu e-posti aadress",
         "message": "Sõnum peab olema vähemalt 10 tähemärki pikk"
-      }
+      },
+      "success": "Täname sõnumi eest. Võtame teiega peagi ühendust."
     }
   },
   "termsOfService": {
@@ -253,6 +255,14 @@
         "description": "Kui teil on küsimusi nende Tingimuste kohta, võtke meiega ühendust aadressil <emailLink>paul@appstatis.com</emailLink>",
         "lastUpdated": "Viimati uuendatud: 7. märts 2023."
       }
+    }
+  },
+  "unsubscribe": {
+    "title": "Kahju, et lahkud, aga respekteerime sinu postkasti",
+    "description": "Sisesta oma e-posti aadress allpool, et lõpetada meie e-kirjade saamine.",
+    "form": {
+      "email": "E-posti aadress",
+      "submit": "Saada"
     }
   }
 }
